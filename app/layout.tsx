@@ -3,8 +3,7 @@ import './whatsapp-icon.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import Image from 'next/image';
-import whatsappIcon from '@/public/whatsapp.png'; // <-- put your PNG in /public folder
-
+ 
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
@@ -33,7 +32,7 @@ export default function RootLayout({
           aria-label="Contact us on WhatsApp"
         >
           <Image
-            src={whatsappIcon}
+            src="/whatsapp.png" // <-- ensure this path is correct
             alt="WhatsApp"
             width={70}   // adjust size as needed
             height={70}  // adjust size as needed
