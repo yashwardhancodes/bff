@@ -15,6 +15,9 @@ import frozen from '@/public/frozen.jpg'
 import cob from '@/public/cob.png'
 import mixed from '@/public/mixed.png'
 import babycorn from '@/public/babycorn.png'
+import maize from '@/public/maize.png'
+import onion from '@/public/onion.png'
+import peas from '@/public/peas.png'
 
 // Define TypeScript interface for product data
 interface Product {
@@ -172,7 +175,97 @@ export default function Home() {
         ],
       },
     },
-  ]
+    {
+      id: 5,
+      name: 'Organic Green Peas',
+      description: 'Sweet, tender organic green peas, flash-frozen to preserve their natural flavor and nutrients.',
+      image: peas,
+      details: 'Sourced from our sustainable family farms, these Organic Green Peas are harvested at peak ripeness and flash-frozen to lock in their sweetness and nutrition. Perfect for soups, curries, salads, and side dishes.',
+      highlights: [
+        '100% organic and non-GMO',
+        'Sourced from sustainable family farms',
+        'Rich in protein and fiber',
+        'Available in 1lb and 5lb packages',
+      ],
+      nutrition: {
+        servingSize: '1 cup (134g)',
+        calories: 79,
+        totalFat: '0.4g',
+        sodium: '7mg',
+        totalCarbs: '14g',
+        protein: '5g',
+      },
+      storage: {
+        instructions: 'Store in freezer at 0°F (-18°C) or below. Use within recommended timeframe.',
+        shelfLife: '18 months from production date',
+        usageTips: [
+          'Add to organic curries and stir-fries',
+          'Steam for 3-5 minutes as a side dish',
+          'Perfect for wholesome pea soup or pulao',
+        ],
+      },
+    },
+    {
+      id: 6,
+      name: 'Fresh Onions',
+      description: 'Farm-fresh onions, harvested from sustainable fields for everyday cooking.',
+      image: onion,
+      details: 'Our Fresh Onions are grown on our family farms using sustainable practices. These firm, flavorful onions are perfect for daily Indian cooking, curries, salads, and as a base for many dishes. Not frozen — kept fresh for maximum versatility.',
+      highlights: [
+        'Freshly harvested from family farms',
+        'Sustainably grown',
+        'Essential for everyday cooking',
+        'Available in 2kg and 5kg mesh bags',
+      ],
+      nutrition: {
+        servingSize: '1 medium onion (110g)',
+        calories: 44,
+        totalFat: '0.1g',
+        sodium: '4mg',
+        totalCarbs: '10g',
+        protein: '1.2g',
+      },
+      storage: {
+        instructions: 'Store in a cool, dry, well-ventilated place. Keep away from direct sunlight.',
+        shelfLife: '4-6 weeks when stored properly',
+        usageTips: [
+          'Use as a base for curries and gravies',
+          'Add raw to salads and raita',
+          'Perfect for sautéing with spices',
+        ],
+      },
+    },
+    {
+      id: 7,
+      name: 'Dry Mature Maize',
+      description: 'Full matured and dry maize cobs, sustainably sourced from family farms.',
+      image: maize,
+      details: 'Our Dry Mature Maize is harvested at full maturity and naturally dried on our sustainable family farms. These hard, golden cobs are ideal for grinding into maize flour, making popcorn, or traditional uses. Delivered dry, not frozen or fresh sweet corn.',
+      highlights: [
+        'Fully matured and naturally dried',
+        'Sustainably grown on family farms',
+        'Perfect for flour, popcorn and traditional recipes',
+        'Available in packs of 5kg and 10kg',
+      ],
+      nutrition: {
+        servingSize: '100g (dry kernels)',
+        calories: 365,
+        totalFat: '4.7g',
+        sodium: '35mg',
+        totalCarbs: '74g',
+        protein: '9g',
+      },
+      storage: {
+        instructions: 'Store in a cool, dry place in an airtight container. Keep away from moisture.',
+        shelfLife: '12 months from production date',
+        usageTips: [
+          'Grind into fresh maize flour (makka atta)',
+          'Use for making popcorn or roasted snacks',
+          'Ideal for traditional Indian recipes and animal feed',
+        ],
+      },
+    },
+  ];
 
   return (
     <div className="min-h-screen bg-white">
@@ -434,10 +527,22 @@ export default function Home() {
       {/* Contact Section */}
    <section id="contact" className="py-20 bg-gray-900">
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
     <div className="text-center mb-16">
+
+      {/* ✅ Image Added Here */}
+      <div className="flex justify-center mb-6">
+        <img
+          src="/logo2.png" // replace with your image path
+          alt="Contact Us"
+          className="w-52 h-52 object-cover"
+        />
+      </div>
+
       <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
         Get In Touch
       </h2>
+
       <p className="text-xl text-gray-300 max-w-3xl mx-auto">
         Ready to partner with us? Contact our team for pricing, availability, and
         custom organic solutions sourced from our farms.
@@ -451,7 +556,9 @@ export default function Home() {
             <Phone className="h-6 w-6 text-white" />
           </div>
           <h3 className="text-xl font-semibold text-white mb-2">Call Us</h3>
-          <p className="text-gray-300">+919673963283 / +919021297956</p>
+          <p className="text-gray-300">
+            +919673963283 / +919021297956
+          </p>
         </CardContent>
       </Card>
 
@@ -461,7 +568,7 @@ export default function Home() {
             <Mail className="h-6 w-6 text-white" />
           </div>
           <h3 className="text-xl font-semibold text-white mb-2">Email Us</h3>
-          <p className="text-gray-300">pankajtupke14@gmail.com</p>
+          <p className="text-gray-300">bfffrozencorns@gmail.com</p>
         </CardContent>
       </Card>
 

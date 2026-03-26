@@ -11,6 +11,9 @@ export const metadata: Metadata = {
   title: 'BFF Frozen Corns - Premium Frozen Corn Products',
   description:
     'Premium frozen corn products delivered fresh from farm to freezer. Serving restaurants, retailers, and food service providers nationwide since 1985.',
+     icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
