@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { Menu, X, Leaf, Phone, Mail, MapPin, Star } from 'lucide-react'
+import { Menu, X, Leaf, Phone, Mail, MapPin, Star, Globe, ShieldCheck, Truck, Award, Download } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import Image, { StaticImageData } from 'next/image'
@@ -17,6 +17,7 @@ import mixed from '@/public/mixed.png'
 import babycorn from '@/public/babycorn.png'
 import maize from '@/public/maize.png'
 import onion from '@/public/onion.png'
+import onionPowder from '@/public/onionPowder.jpg'
 import peas from '@/public/peas.png'
 
 // Define TypeScript interface for product data
@@ -44,10 +45,10 @@ interface Product {
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false)
-  const [showMore, setShowMore] = useState<boolean>(false)
+  const [showMore, setShowMore] = useState<boolean>(true)
 
     const generateWhatsAppLink = (productName: string) => {
-        const phoneNumber = '+919673963283'
+        const phoneNumber = '+917559258750'
         const message = encodeURIComponent(`Hello, I'm interested in enquiring about ${productName}. Can you provide more details?`)
         return `https://wa.me/${phoneNumber}?text=${message}`
     }
@@ -265,6 +266,36 @@ export default function Home() {
         ],
       },
     },
+    {
+      id: 8,
+      name: 'Onion Powder',
+      description: 'Premium dehydrated onion powder, processed from farm-fresh onions with no additives.',
+      image: onionPowder,
+      details: 'Our Onion Powder is carefully processed from premium farm-fresh onions grown across Maharashtra. The onions are hygienically cleaned, sliced, dehydrated at controlled temperatures, and finely ground to deliver a consistent flavour and aroma. Free from artificial additives and preservatives, it is ideal for food manufacturers, spice blenders, restaurants, and export markets worldwide.',
+      highlights: [
+        'Made from 100% farm-fresh onions',
+        'No artificial additives or preservatives',
+        'Fine texture with consistent flavour',
+        'Available in bulk export packaging (25 kg bags)',
+      ],
+      nutrition: {
+        servingSize: '1 tsp (3g)',
+        calories: 9,
+        totalFat: '0g',
+        sodium: '1mg',
+        totalCarbs: '2g',
+        protein: '0.3g',
+      },
+      storage: {
+        instructions: 'Store in a cool, dry place in an airtight container. Keep away from moisture, heat, and direct sunlight.',
+        shelfLife: '18 months from production date',
+        usageTips: [
+          'Use as a seasoning in soups, gravies, and marinades',
+          'Ideal for spice blends, ready-to-cook mixes, and snack coatings',
+          'Perfect for food processing and industrial use',
+        ],
+      },
+    },
   ];
 
   return (
@@ -292,21 +323,23 @@ export default function Home() {
                             <a href="#about" className="text-gray-700 hover:text-amber-600 transition-colors">
                                 About
                             </a>
+                            <a href="#export" className="text-amber-600 font-semibold hover:text-amber-700 transition-colors">
+                                Export
+                            </a>
                             <a href="#products" className="text-gray-700 hover:text-amber-600 transition-colors">
                                 Products
                             </a>
                             <a href="#contact" className="text-gray-700 hover:text-amber-600 transition-colors">
                                 Contact
                             </a>
-                             <Button className="w-full mt-2 bg-amber-500 hover:bg-amber-600">
-                                    <a
-                                        href={generateWhatsAppLink("forzen products")}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                    >
-                                        Get Inquiry
-                                    </a>
-                                </Button>
+                            <a
+                                href="/Baliraja.pdf"
+                                download="Baliraja_Farm_Fresh_Brochure.pdf"
+                                className="inline-flex items-center gap-2 bg-amber-500 hover:bg-amber-600 text-white font-semibold text-sm px-4 py-2 rounded-md transition-colors"
+                            >
+                                <Download className="h-4 w-4" />
+                                Download Brochure
+                            </a>
                         </div>
 
                         {/* Mobile menu button */}
@@ -339,6 +372,12 @@ export default function Home() {
                                     About
                                 </a>
                                 <a
+                                    href="#export"
+                                    className="block px-3 py-2 text-amber-600 font-semibold hover:text-amber-700"
+                                >
+                                    Export
+                                </a>
+                                <a
                                     href="#products"
                                     className="block px-3 py-2 text-gray-700 hover:text-amber-600"
                                 >
@@ -350,15 +389,14 @@ export default function Home() {
                                 >
                                     Contact
                                 </a>
-                                <Button className="w-full mt-2 bg-amber-500 hover:bg-amber-600">
-                                    <a
-                                        href={generateWhatsAppLink("forzen products")}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                    >
-                                        Get Inquiry
-                                    </a>
-                                </Button>
+                                <a
+                                    href="/brochure.pdf"
+                                    download="Baliraja_Farm_Fresh_Brochure.pdf"
+                                    className="flex items-center justify-center gap-2 w-full mt-2 bg-amber-500 hover:bg-amber-600 text-white font-semibold text-sm px-4 py-2.5 rounded-md transition-colors"
+                                >
+                                    <Download className="h-4 w-4" />
+                                    Download Brochure
+                                </a>
                             </div>
                         </div>
                     )}
@@ -367,6 +405,7 @@ export default function Home() {
 
       {/* Hero Section */}
       <section id="home" className="relative min-h-screen flex items-center">
+        {/* Background — gradient darker on left for readability, vivid corn visible on right */}
         <div
           className="absolute inset-0 z-0"
           style={{
@@ -376,26 +415,69 @@ export default function Home() {
             backgroundPosition: 'center',
           }}
         >
-          <div className="absolute inset-0 bg-black/40"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/70 to-black/50" />
         </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center text-white">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">
-              Organic Frozen Corn
-              <span className="block text-amber-400">Sourced from the Farm</span>
-            </h1>
-            <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed">
-              From our sustainable family farms to your freezer, we deliver organic,
-              farm-fresh corn products to restaurants, retailers, and food service
-              providers nationwide.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-               <Link href="#products">
-              <Button size="lg"  className="bg-amber-500 hover:bg-amber-600 text-lg px-8 py-3">
-                View Products
-              </Button></Link>
+        <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-28">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+
+            {/* LEFT */}
+            <div>
+              <span className="inline-block bg-amber-500 text-white text-xs font-bold px-3 py-1.5 rounded uppercase tracking-widest mb-7">
+                Est. 1985 · India
+              </span>
+
+              <h1 className="font-extrabold text-white leading-tight mb-5">
+                <span className="block text-4xl md:text-6xl">Premium Organic</span>
+                <span className="block text-4xl md:text-6xl text-amber-400">Frozen Vegetables</span>
+              </h1>
+
+              <p className="text-lg text-white/75 mb-10">
+                Certified Indian exporter — corn, baby corn, peas &amp; mixed vegetables.
+              </p>
+
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link href="#products">
+                  <Button size="lg" className="bg-amber-500 hover:bg-amber-600 font-semibold px-8 h-12 w-full sm:w-auto">
+                    View Products
+                  </Button>
+                </Link>
+                <a
+                  href="mailto:exports@bfffrozencorns.com?subject=Export%20Inquiry%20-%20Organic%20Frozen%20Vegetables"
+                  className="inline-flex items-center justify-center gap-2 border-2 border-white/60 text-white hover:border-amber-400 hover:text-amber-400 font-semibold px-8 h-12 rounded-md transition-colors"
+                >
+                  <Globe className="h-5 w-5" />
+                  Export Inquiry
+                </a>
+              </div>
             </div>
+
+            {/* RIGHT — stats card */}
+            <div className="hidden lg:flex justify-end">
+              <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 w-full max-w-xs">
+                <div className="grid grid-cols-2 gap-3">
+                  {[
+                    { number: '38+',  label: 'Years' },
+                    { number: '10+',  label: 'Countries' },
+                    { number: '7',    label: 'Products' },
+                    { number: '18mo', label: 'Shelf Life' },
+                  ].map(({ number, label }) => (
+                    <div key={label} className="bg-white/10 rounded-xl p-4 text-center">
+                      <div className="text-3xl font-extrabold text-amber-400">{number}</div>
+                      <div className="text-xs text-white/70 mt-1">{label}</div>
+                    </div>
+                  ))}
+                </div>
+                <div className="mt-4 pt-4 border-t border-white/15 space-y-1.5">
+                  {['FSSAI Certified', 'APEDA Registered', '100% Organic'].map((item) => (
+                    <div key={item} className="flex items-center gap-2 text-white/75 text-sm">
+                      <span className="text-amber-400">✓</span> {item}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
@@ -448,15 +530,15 @@ export default function Home() {
 
                 <div className="flex items-start space-x-4">
                   <div className="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                    <Phone className="h-6 w-6 text-blue-600" />
+                    <Globe className="h-6 w-6 text-blue-600" />
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                      Reliable Service
+                      Global Export
                     </h3>
                     <p className="text-gray-600">
-                      Nationwide distribution of farm-fresh products with timely delivery
-                      and exceptional customer service.
+                      FSSAI certified and APEDA registered — supplying bulk organic frozen
+                      vegetables to buyers across 10+ countries since 1985.
                     </p>
                   </div>
                 </div>
@@ -470,6 +552,124 @@ export default function Home() {
                 className="rounded-lg shadow-lg w-full h-96 object-cover"
               />
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Export Section */}
+      <section id="export" className="py-20 bg-amber-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+          {/* Heading */}
+          <div className="text-center mb-16">
+            <span className="inline-block bg-amber-100 text-amber-700 text-sm font-semibold px-4 py-1 rounded-full mb-4 uppercase tracking-wide">
+              Global Export
+            </span>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Trusted Indian Organic Exporter Since 1985
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              We supply certified organic frozen vegetables to importers, distributors,
+              and food-service chains across the Middle East, Europe, North America, and
+              Southeast Asia. All shipments comply with international food safety standards.
+            </p>
+          </div>
+
+          {/* Certifications */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
+            {[
+              { Icon: ShieldCheck, color: 'text-green-600', bg: 'bg-green-100', label: 'FSSAI Certified', desc: 'Indian Food Safety Compliant' },
+              { Icon: Award, color: 'text-amber-600', bg: 'bg-amber-100', label: 'APEDA Registered', desc: 'Agri Export Approved' },
+              { Icon: Leaf, color: 'text-emerald-600', bg: 'bg-emerald-100', label: 'Organic Certified', desc: 'Non-GMO & Pesticide-Free' },
+              { Icon: Truck, color: 'text-blue-600', bg: 'bg-blue-100', label: 'Cold Chain Logistics', desc: 'Farm to Port — Integrity Assured' },
+            ].map(({ Icon, color, bg, label, desc }) => (
+              <div key={label} className="bg-white rounded-xl p-6 text-center shadow-sm border border-amber-100">
+                <div className={`w-12 h-12 ${bg} rounded-lg flex items-center justify-center mx-auto mb-3`}>
+                  <Icon className={`h-6 w-6 ${color}`} />
+                </div>
+                <h3 className="font-bold text-gray-900 mb-1 text-sm">{label}</h3>
+                <p className="text-xs text-gray-500">{desc}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* Key Stats */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16 bg-white rounded-2xl p-8 shadow-sm border border-amber-100">
+            {[
+              { number: '38+', label: 'Years of Excellence' },
+              { number: '7+', label: 'Premium Products' },
+              { number: '10+', label: 'Countries Served' },
+              { number: '18 mo', label: 'Frozen Shelf Life' },
+            ].map(({ number, label }) => (
+              <div key={label} className="text-center">
+                <div className="text-4xl font-bold text-amber-600 mb-2">{number}</div>
+                <div className="text-gray-600 text-sm">{label}</div>
+              </div>
+            ))}
+          </div>
+
+          {/* Export Markets */}
+          <div className="bg-white rounded-2xl p-8 shadow-sm border border-amber-100 mb-10">
+            <h3 className="text-xl font-bold text-gray-900 mb-6 text-center">We Export To</h3>
+            <div className="flex flex-wrap justify-center gap-3">
+              {[
+                { flag: '🇦🇪', name: 'UAE' },
+                { flag: '🇸🇦', name: 'Saudi Arabia' },
+                { flag: '🇶🇦', name: 'Qatar' },
+                { flag: '🇬🇧', name: 'United Kingdom' },
+                { flag: '🇺🇸', name: 'USA' },
+                { flag: '🇩🇪', name: 'Germany' },
+                { flag: '🇨🇦', name: 'Canada' },
+                { flag: '🇸🇬', name: 'Singapore' },
+                { flag: '🇦🇺', name: 'Australia' },
+                { flag: '🇯🇵', name: 'Japan' },
+              ].map(({ flag, name }) => (
+                <div key={name} className="flex items-center gap-2 bg-gray-50 px-4 py-2 rounded-full border border-gray-100">
+                  <span className="text-xl">{flag}</span>
+                  <span className="text-gray-700 font-medium text-sm">{name}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Why Choose Us */}
+          <div className="bg-gray-900 rounded-2xl p-8 mb-10 text-white">
+            <h3 className="text-xl font-bold mb-6 text-center">Why Global Buyers Choose BFF</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {[
+                'Consistent quality across seasons — farm-controlled harvest',
+                'Customisable packaging and labelling for international markets',
+                'Competitive pricing with flexible MOQ for bulk orders',
+                'Cold chain logistics from farm gate to port of origin',
+                'Full documentation: Phytosanitary, COA, HACCP &amp; more',
+                'Three generations of organic farming — zero compromise on quality',
+              ].map((point) => (
+                <div key={point} className="flex items-start gap-3">
+                  <span className="text-amber-400 font-bold mt-0.5">✓</span>
+                  <p className="text-gray-300 text-sm" dangerouslySetInnerHTML={{ __html: point }} />
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Export CTA */}
+          <div className="text-center flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="mailto:exports@bfffrozencorns.com?subject=Export%20Inquiry%20-%20Organic%20Frozen%20Vegetables"
+              className="inline-flex items-center justify-center gap-2 bg-amber-500 hover:bg-amber-600 text-white font-semibold px-8 py-4 rounded-lg text-lg transition-colors"
+            >
+              <Mail className="h-5 w-5" />
+              Send Export Inquiry
+            </a>
+            <a
+              href="https://wa.me/917559258750?text=Hello%20BFF%20Frozen%20Corns%2C%20I%20am%20interested%20in%20bulk%20export%20of%20your%20organic%20frozen%20vegetables.%20Please%20share%20your%20product%20catalogue%20and%20pricing."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 border-2 border-amber-500 text-amber-600 hover:bg-amber-50 font-semibold px-8 py-4 rounded-lg text-lg transition-colors"
+            >
+              <Phone className="h-5 w-5" />
+              WhatsApp for Bulk Orders
+            </a>
           </div>
         </div>
       </section>
@@ -544,8 +744,8 @@ export default function Home() {
       </h2>
 
       <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-        Ready to partner with us? Contact our team for pricing, availability, and
-        custom organic solutions sourced from our farms.
+        Ready to partner with us? Contact our team for export pricing, product catalogue,
+        MOQ details, and custom packaging for your market.
       </p>
     </div>
 
@@ -557,7 +757,7 @@ export default function Home() {
           </div>
           <h3 className="text-xl font-semibold text-white mb-2">Call Us</h3>
           <p className="text-gray-300">
-            +919673963283 / +919021297956
+            <a href="tel:+917559258750" className="hover:text-amber-400 transition-colors">+91 75592 58750</a>
           </p>
         </CardContent>
       </Card>
@@ -568,7 +768,11 @@ export default function Home() {
             <Mail className="h-6 w-6 text-white" />
           </div>
           <h3 className="text-xl font-semibold text-white mb-2">Email Us</h3>
-          <p className="text-gray-300">bfffrozencorns@gmail.com</p>
+          <p className="text-gray-300">
+            <a href="mailto:exports@bfffrozencorns.com" className="hover:text-amber-400 transition-colors">
+              exports@bfffrozencorns.com
+            </a>
+          </p>
         </CardContent>
       </Card>
 
@@ -617,7 +821,7 @@ export default function Home() {
               <FaFacebook size={24} />
             </a>
             <a
-              href="https://wa.me/1234567890" // Replace with actual WhatsApp number
+              href="https://wa.me/917559258750?text=Hello%20BFF%20Frozen%20Corns%2C%20I%20have%20an%20export%20inquiry."
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transition-colors"
@@ -635,7 +839,7 @@ export default function Home() {
               <FaLinkedin size={24} />
             </a>
           </div>
-          <p className="text-gray-400">© 2025 BFF Frozen Corns. All rights reserved.</p>
+          <p className="text-gray-400">© 2026 BFF Frozen Corns — Baliraja Farm Fresh. All rights reserved.</p>
         </div>
       </div>
     </footer>

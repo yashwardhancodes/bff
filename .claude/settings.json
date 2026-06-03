@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls -la e:\\\\\\\\Baliraja\\\\\\\\bff\\\\\\\\public)",
+      "Bash(npx next *)",
+      "Bash(Copy-Item \"e:\\\\Baliraja\\\\bff\\\\app\\\\products\\\\[id]\\\\page.tsx\" \"e:\\\\Baliraja\\\\bff\\\\app\\\\products\\\\[id]\\\\ProductClient.tsx\")",
+      "Bash(cp \"e:/Baliraja/bff/app/products/[id]/page.tsx\" \"e:/Baliraja/bff/app/products/[id]/ProductClient.tsx\")",
+      "Bash(curl -s http://localhost:3000/sitemap.xml)"
+    ],
+    "additionalDirectories": [
+      "e:\\Baliraja\\bff\\app\\products\\[id]"
+    ]
+  }
+}
