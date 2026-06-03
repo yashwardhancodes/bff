@@ -1,4 +1,4 @@
-const BASE_URL = 'https://www.bfffrozencorns.com'
+const BASE_URL = 'https://bfffrozencorns.com'
 
 export interface ProductSeoData {
   id: number

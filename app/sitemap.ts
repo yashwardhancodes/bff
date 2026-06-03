@@ -1,6 +1,6 @@
 import { MetadataRoute } from 'next';
 
-const BASE_URL = 'https://www.bfffrozencorns.com';
+const BASE_URL = 'https://bfffrozencorns.com';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const productIds = [1, 2, 3, 4, 5, 6, 7, 8];

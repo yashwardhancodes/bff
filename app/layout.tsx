@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 const inter = Inter({ subsets: ['latin'] });
 
-const BASE_URL = 'https://www.bfffrozencorns.com';
+const BASE_URL = 'https://bfffrozencorns.com';
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),

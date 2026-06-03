@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { getProductSeo, buildProductJsonLd, buildBreadcrumbJsonLd, productSeoData } from '@/lib/productData'
 import ProductClient from './ProductClient'
 
-const BASE_URL = 'https://www.bfffrozencorns.com'
+const BASE_URL = 'https://bfffrozencorns.com'
 
 export function generateStaticParams() {
   return productSeoData.map((p) => ({ id: String(p.id) }))
