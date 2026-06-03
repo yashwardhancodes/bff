@@ -11,9 +11,10 @@ export function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: {
-  params: { id: string }
+  params: Promise<{ id: string }>
 }): Promise<Metadata> {
-  const product = getProductSeo(parseInt(params.id))
+  const { id } = await params
+  const product = getProductSeo(parseInt(id))
 
   if (!product) {
     return {
@@ -52,9 +53,9 @@ export async function generateMetadata({
   }
 }
 
-export default function Page({ params }: { params: { id: string } }) {
-  const id = parseInt(params.id)
-  const product = getProductSeo(id)
+export default async function Page({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params
+  const product = getProductSeo(parseInt(id))
 
   return (
     <>
