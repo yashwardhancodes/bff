@@ -80,6 +80,9 @@ export const metadata: Metadata = {
     icon: '/favicon.ico',
   },
   category: 'food & agriculture',
+  verification: {
+    google: '90jiNIrsFYkMjpjTTv0vSPdKe3wcZwE_lBY_8Kz691g',
+  },
 };
 
 export default function RootLayout({
