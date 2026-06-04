@@ -487,11 +487,12 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Farm-Fresh Quality 
+              India&apos;s Trusted Frozen Vegetables Exporter
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Three generations of organic farming excellence, delivering sustainably
-              sourced, farm-fresh frozen corn products with unmatched flavor and quality.
+              Baliraja Farm Fresh is a FSSAI certified, APEDA registered frozen vegetables exporter
+              from Maharashtra, India — supplying IQF frozen sweet corn, baby corn, green peas,
+              mixed vegetables and onion powder to global buyers since 1985.
             </p>
           </div>
 
@@ -504,11 +505,11 @@ export default function Home() {
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                      Organic Quality
+                      IQF Frozen Vegetables — 50 MT/Day
                     </h3>
                     <p className="text-gray-600">
-                      Hand-selected, organic corn varieties sourced from our farms, frozen
-                      at peak freshness to preserve nutrition and flavor.
+                      Advanced IQF processing plant with 50 MT daily capacity — frozen sweet corn,
+                      baby corn, green peas and mixed vegetables processed and packed to international food safety standards.
                     </p>
                   </div>
                 </div>
@@ -519,11 +520,12 @@ export default function Home() {
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                      Sustainable Farming
+                      2000+ Farmer Network — Maharashtra
                     </h3>
                     <p className="text-gray-600">
-                      Committed to organic, environmentally responsible farming practices
-                      and sustainable sourcing from family farms.
+                      Sourcing from 2000+ farmers across Maharashtra ensures year-round
+                      supply of fresh raw material with full traceability — from farm to
+                      export-ready frozen food packaging.
                     </p>
                   </div>
                 </div>
@@ -534,11 +536,12 @@ export default function Home() {
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                      Global Export
+                      2000 MT Cold Storage — Export Ready
                     </h3>
                     <p className="text-gray-600">
-                      FSSAI certified and APEDA registered — supplying bulk organic frozen
-                      vegetables to buyers across 10+ countries since 1985.
+                      Temperature-controlled cold storage of 2000 MT capacity with 5 blast
+                      freezers ensures product quality from our facility in Ahilyanagar,
+                      Maharashtra to any global destination.
                     </p>
                   </div>
                 </div>
@@ -566,12 +569,12 @@ export default function Home() {
               Global Export
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Trusted Indian Organic Exporter Since 1985
+              Frozen Vegetables Exporter from India — Bulk Supply Worldwide
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              We supply certified organic frozen vegetables to importers, distributors,
-              and food-service chains across the Middle East, Europe, North America, and
-              Southeast Asia. All shipments comply with international food safety standards.
+              We export IQF frozen sweet corn, baby corn, frozen green peas, mixed vegetables
+              and onion powder to importers, distributors and food-service chains across the
+              Middle East, Europe, North America and Southeast Asia.
             </p>
           </div>
 
@@ -596,10 +599,10 @@ export default function Home() {
           {/* Key Stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16 bg-white rounded-2xl p-8 shadow-sm border border-amber-100">
             {[
-              { number: '38+', label: 'Years of Excellence' },
-              { number: '7+', label: 'Premium Products' },
-              { number: '10+', label: 'Countries Served' },
-              { number: '18 mo', label: 'Frozen Shelf Life' },
+              { number: '50 MT', label: 'Daily Production' },
+              { number: '2000+', label: 'Farmer Network' },
+              { number: '2000 MT', label: 'Cold Storage' },
+              { number: '10+', label: 'Countries Exported' },
             ].map(({ number, label }) => (
               <div key={label} className="text-center">
                 <div className="text-4xl font-bold text-amber-600 mb-2">{number}</div>
@@ -679,11 +682,11 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Our Organic Products
+              Frozen Vegetables for Export — Our Product Range
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Discover our range of organic, sustainably sourced corn and vegetable
-              products, fresh from the farm to your table.
+              IQF frozen sweet corn, baby corn, green peas, mixed vegetables and onion powder —
+              all export-ready from our certified processing facility in Maharashtra, India.
             </p>
           </div>
 
@@ -720,6 +723,57 @@ export default function Home() {
             >
               {showMore ? 'Show Less' : 'Explore All Products'}
             </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section id="faq" className="py-20 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Frequently Asked Questions
+            </h2>
+            <p className="text-lg text-gray-600">
+              Everything importers and distributors ask about our frozen vegetables export from India.
+            </p>
+          </div>
+          <div className="space-y-4">
+            {[
+              {
+                q: 'Which frozen vegetables do you export from India?',
+                a: 'We export IQF frozen sweet corn kernels, frozen corn cobs, organic baby corn, frozen green peas, mixed vegetables, fresh onions, dry mature maize and onion powder — all processed at our facility in Ahilyanagar, Maharashtra, India.',
+              },
+              {
+                q: 'Are you a FSSAI certified and APEDA registered frozen food exporter?',
+                a: 'Yes. Baliraja Farm Fresh is FSSAI certified and APEDA registered. All our frozen vegetables are processed under strict quality control and international food safety standards, making them export-ready for the Middle East, Europe, USA and other markets.',
+              },
+              {
+                q: 'What is the minimum order quantity for frozen vegetables export?',
+                a: 'Our minimum order quantity for export is typically 1 MT per product. We offer flexible bulk packaging options and can customise labelling and pack sizes to meet the requirements of your market.',
+              },
+              {
+                q: 'Which countries do you export frozen sweet corn and vegetables to?',
+                a: 'We export frozen vegetables to UAE, Saudi Arabia, Qatar, United Kingdom, USA, Germany, Canada, Singapore, Australia and Japan, among others. We supply to importers, distributors, supermarket chains and food processors worldwide.',
+              },
+              {
+                q: 'What is your production capacity for frozen vegetables?',
+                a: 'Our processing facility has a daily capacity of 50 MT with 5 blast freezers (10 MT each), IQF processing at 2 MT per hour, and cold storage capacity of 2000 MT — ensuring consistent bulk supply throughout the year.',
+              },
+              {
+                q: 'What export documentation do you provide?',
+                a: 'We provide all standard export documentation including Phytosanitary Certificate, Certificate of Analysis (COA), HACCP records, packing list, invoice and bill of lading. Our team handles complete documentation support for hassle-free import clearance.',
+              },
+              {
+                q: 'Where is Baliraja Farm Fresh located?',
+                a: 'Our registered office and manufacturing facility is at Sakharwadi, Talegaon Male, Ahilyanagar, Maharashtra – 413708, India. We source raw material from 2000+ farmers across Maharashtra.',
+              },
+            ].map(({ q, a }, i) => (
+              <div key={i} className="bg-white rounded-xl border border-gray-200 p-6 shadow-sm">
+                <h3 className="font-semibold text-gray-900 mb-3 text-base">{q}</h3>
+                <p className="text-gray-600 text-sm leading-relaxed">{a}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -782,7 +836,11 @@ export default function Home() {
             <MapPin className="h-6 w-6 text-white" />
           </div>
           <h3 className="text-xl font-semibold text-white mb-2">Visit Us</h3>
-          <p className="text-gray-300">Baliraja Farm Fresh</p>
+          <p className="text-gray-300 text-sm leading-relaxed">
+            Sakharwadi, Talegaon Male,<br />
+            Ahilyanagar, Maharashtra – 413708<br />
+            India
+          </p>
         </CardContent>
       </Card>
     </div>
