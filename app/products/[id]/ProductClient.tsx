@@ -525,7 +525,7 @@ export default function ProductPage() {
             </nav>
 
             {/* Product Content */}
-            <div className="pt-24 pb-20 bg-gradient-to-b from-amber-50/30 to-white">
+            <div className="pt-8 pb-20 bg-gradient-to-b from-amber-50/30 to-white">
                 <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                     {/* Hero Section with Product Image and Title */}
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
@@ -544,7 +544,7 @@ export default function ProductPage() {
                                     🌱 Premium Organic Quality
                                 </span>
                             </div>
-                            <h1 className="text-5xl font-bold text-gray-900 leading-tight">{product.name}</h1>
+                            <h2 className="text-5xl font-bold text-gray-900 leading-tight">{product.name}</h2>
                             <p className="text-xl text-gray-600 leading-relaxed">{product.description}</p>
                             <Button
                                 asChild

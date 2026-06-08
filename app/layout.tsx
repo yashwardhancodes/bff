@@ -11,29 +11,31 @@ const BASE_URL = 'https://bfffrozencorns.com';
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
-    default: 'BFF Frozen Corns | Organic Frozen Vegetables Exporter from India',
-    template: '%s | BFF Frozen Corns',
+    default: 'Sweet Corn Exporter from India | Onion, Baby Corn, Frozen Vegetables — BFF',
+    template: '%s | BFF Frozen Corns — Exporter from India',
   },
   description:
-    'Baliraja Farm Fresh (BFF) — FSSAI certified, APEDA registered frozen vegetables exporter from India. IQF sweet corn, baby corn, green peas, mixed veg & onion powder. 50 MT/day capacity. Bulk supply to UAE, UK, USA, Europe & Asia.',
+    'Baliraja Farm Fresh (BFF) — sweet corn exporter from India, onion exporter from India, baby corn & frozen vegetables exporter. FSSAI certified, APEDA registered. 50 MT/day IQF plant in Maharashtra. Bulk supply to UAE, UK, USA, Europe & Asia.',
   keywords: [
+    'sweet corn exporter from India',
+    'onion exporter from India',
+    'baby corn exporter from India',
+    'frozen vegetables exporter from India',
+    'frozen sweet corn exporter from India',
+    'green peas exporter from India',
+    'onion powder exporter from India',
+    'frozen mixed vegetables exporter from India',
     'frozen vegetables exporter India',
-    'organic frozen corn exporter India',
-    'baby corn exporter India',
     'IQF frozen vegetables manufacturer India',
     'APEDA registered frozen food exporter',
     'bulk frozen vegetables supplier India',
-    'frozen sweet corn export India',
-    'frozen green peas exporter India',
-    'onion powder exporter India',
-    'organic mixed vegetables exporter India',
+    'organic frozen corn exporter India',
     'Baliraja Farm Fresh',
     'BFF frozen corns',
     'frozen vegetables bulk export Maharashtra',
     'FSSAI certified frozen food India',
     'cold chain frozen food supplier India',
     'frozen vegetable manufacturer Maharashtra',
-    'Indian agri export frozen food',
   ],
   authors: [{ name: 'Baliraja Farm Fresh', url: BASE_URL }],
   creator: 'Baliraja Farm Fresh',
@@ -200,10 +202,42 @@ export default function RootLayout({
         mainEntity: [
           {
             '@type': 'Question',
-            name: 'Do you export frozen vegetables worldwide?',
+            name: 'Are you a sweet corn exporter from India?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'Yes. Baliraja Farm Fresh exports IQF frozen vegetables to the Middle East, Europe, North America, Southeast Asia and more. We are APEDA registered and supply to 10+ countries.',
+              text: 'Yes. Baliraja Farm Fresh (BFF) is a leading sweet corn exporter from India. We export IQF frozen sweet corn kernels and whole corn cobs processed at our Ahilyanagar, Maharashtra facility. FSSAI certified, APEDA registered. Bulk supply to UAE, UK, USA, Germany and Asia.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Are you an onion exporter from India?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Yes. Baliraja Farm Fresh exports fresh onions and dehydrated onion powder from Maharashtra, India. Fresh onions in 2 kg and 5 kg mesh bags; onion powder in 25 kg bulk export bags — ideal for food manufacturers and spice blenders worldwide.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Are you a baby corn exporter from India?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Yes. We export organic IQF frozen baby corn from India. Hand-picked at peak freshness from Maharashtra farms, frozen within hours of harvest. Available in consumer packs and bulk export bags for food service and supermarket chains in UAE, UK, Singapore and Japan.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Are you a green peas exporter from India?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Yes. Baliraja Farm Fresh exports IQF organic frozen green peas from India. Harvested at peak ripeness, flash-frozen to lock in nutrition and sweetness. Available in 500 g, 1 kg, 5 kg and bulk export bags.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Which frozen vegetables do you export from India?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'We are a frozen vegetables exporter from India supplying IQF sweet corn kernels, frozen corn cobs, organic baby corn, frozen green peas, mixed vegetables, fresh onions, dry maize and onion powder from our certified facility in Ahilyanagar, Maharashtra.',
             },
           },
           {
@@ -212,22 +246,6 @@ export default function RootLayout({
             acceptedAnswer: {
               '@type': 'Answer',
               text: 'Our minimum order quantity for export is typically 1 MT per product. We offer flexible bulk packaging options and can customise labelling for international markets.',
-            },
-          },
-          {
-            '@type': 'Question',
-            name: 'Are your products FSSAI and APEDA certified?',
-            acceptedAnswer: {
-              '@type': 'Answer',
-              text: 'Yes. All our products are FSSAI certified and we are an APEDA registered exporter. We follow strict quality control and international food safety standards throughout production.',
-            },
-          },
-          {
-            '@type': 'Question',
-            name: 'What frozen vegetables do you export from India?',
-            acceptedAnswer: {
-              '@type': 'Answer',
-              text: 'We export organic sweet corn kernels, frozen corn cobs, baby corn, green peas, mixed vegetables, fresh onions, dry maize and onion powder from our processing facility in Maharashtra, India.',
             },
           },
           {

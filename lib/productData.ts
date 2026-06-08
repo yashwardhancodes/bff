@@ -16,14 +16,14 @@ export const productSeoData: ProductSeoData[] = [
   {
     id: 1,
     name: 'Organic Sweet Corn Kernels',
-    seoTitle: 'Organic Sweet Corn Kernels Exporter India | Baliraja Farm Fresh',
+    seoTitle: 'Sweet Corn Exporter from India | IQF Frozen Corn Kernels — BFF',
     seoDescription:
-      'Export-quality IQF organic sweet corn kernels from India. Non-GMO, FSSAI certified, 18-month shelf life. Bulk supply for importers & food manufacturers worldwide.',
+      'Sweet corn exporter from India — IQF organic frozen sweet corn kernels. Non-GMO, FSSAI certified, 18-month shelf life. Bulk supply to UAE, UK, USA & worldwide.',
     keywords: [
+      'sweet corn exporter from India',
+      'frozen sweet corn exporter from India',
+      'IQF sweet corn bulk supplier India',
       'organic sweet corn kernels exporter India',
-      'IQF sweet corn bulk supplier',
-      'frozen sweet corn export India',
-      'sweet corn kernels wholesale India',
       'frozen corn kernels manufacturer India',
     ],
     details:
@@ -40,12 +40,13 @@ export const productSeoData: ProductSeoData[] = [
   {
     id: 2,
     name: 'Farm-Fresh Frozen Corn Cobs',
-    seoTitle: 'Frozen Corn Cobs Exporter India | Baliraja Farm Fresh BFF',
+    seoTitle: 'Frozen Corn Cobs Exporter from India | IQF Corn Cob Bulk — BFF',
     seoDescription:
-      'Whole frozen corn cobs from India — organically grown, IQF-frozen, pesticide-free. Bulk export to Middle East, Europe & USA. FSSAI & APEDA certified.',
+      'Frozen corn cob exporter from India — organic, IQF-frozen, pesticide-free. Bulk export to Middle East, Europe & USA. FSSAI & APEDA certified.',
     keywords: [
-      'frozen corn cobs exporter India',
-      'whole corn cob bulk supplier',
+      'frozen corn cobs exporter from India',
+      'sweet corn exporter from India',
+      'whole corn cob bulk supplier India',
       'IQF corn cob export India',
       'organic corn cob manufacturer Maharashtra',
     ],
@@ -63,13 +64,14 @@ export const productSeoData: ProductSeoData[] = [
   {
     id: 3,
     name: 'Organic Mixed Vegetables',
-    seoTitle: 'Frozen Mixed Vegetables Exporter India | Baliraja Farm Fresh',
+    seoTitle: 'Frozen Mixed Vegetables Exporter from India | IQF Blend — BFF',
     seoDescription:
-      'Export-quality IQF frozen mixed vegetables from India — carrots, peas, corn & green beans. FSSAI certified, no preservatives. Bulk supply worldwide.',
+      'Frozen mixed vegetables exporter from India — IQF carrots, peas, corn & green beans. FSSAI certified, no preservatives. Bulk supply worldwide.',
     keywords: [
-      'frozen mixed vegetables exporter India',
+      'frozen mixed vegetables exporter from India',
+      'frozen vegetables exporter from India',
       'IQF mixed vegetables bulk supplier India',
-      'organic frozen vegetables export',
+      'organic frozen vegetables export India',
       'mixed vegetables manufacturer Maharashtra',
     ],
     details:
@@ -86,13 +88,13 @@ export const productSeoData: ProductSeoData[] = [
   {
     id: 4,
     name: 'Organic Frozen Baby Corns',
-    seoTitle: 'Baby Corn Exporter India | Frozen Baby Corn Bulk Supplier BFF',
+    seoTitle: 'Baby Corn Exporter from India | IQF Frozen Baby Corn Bulk — BFF',
     seoDescription:
-      'Premium IQF frozen baby corn from India. Organic, tender, pesticide-free. Bulk export to UAE, UK, USA & Asia. FSSAI certified. Min order 1 MT.',
+      'Baby corn exporter from India — premium IQF organic frozen baby corn. Tender, pesticide-free. Bulk export to UAE, UK, USA & Asia. FSSAI certified. Min order 1 MT.',
     keywords: [
-      'baby corn exporter India',
-      'frozen baby corn bulk supplier',
-      'IQF baby corn export India',
+      'baby corn exporter from India',
+      'frozen baby corn exporter from India',
+      'IQF baby corn bulk supplier India',
       'organic baby corn manufacturer Maharashtra',
       'baby corn wholesale India',
     ],
@@ -110,15 +112,15 @@ export const productSeoData: ProductSeoData[] = [
   {
     id: 5,
     name: 'Organic Green Peas',
-    seoTitle: 'Frozen Green Peas Exporter India | Baliraja Farm Fresh BFF',
+    seoTitle: 'Green Peas Exporter from India | IQF Frozen Green Peas Bulk — BFF',
     seoDescription:
-      'Export-quality IQF organic frozen green peas from India. Non-GMO, FSSAI certified, 18-month shelf life. Bulk supply for importers & food processors worldwide.',
+      'Green peas exporter from India — IQF organic frozen green peas. Non-GMO, FSSAI certified, 18-month shelf life. Bulk supply for importers & food processors worldwide.',
     keywords: [
-      'frozen green peas exporter India',
+      'green peas exporter from India',
+      'frozen green peas exporter from India',
       'IQF green peas bulk supplier India',
-      'organic frozen peas export',
+      'organic frozen peas export India',
       'green peas manufacturer Maharashtra',
-      'frozen peas wholesale India',
     ],
     details:
       'Harvested at peak ripeness from our sustainable farms and IQF-frozen to lock in sweetness and nutrition. Perfect for soups, curries, salads, and side dishes.',
@@ -134,11 +136,12 @@ export const productSeoData: ProductSeoData[] = [
   {
     id: 6,
     name: 'Fresh Onions',
-    seoTitle: 'Fresh Onions Exporter India | Baliraja Farm Fresh Maharashtra',
+    seoTitle: 'Onion Exporter from India | Fresh Onions Bulk Supplier — BFF',
     seoDescription:
-      'Farm-fresh onions exported from Maharashtra, India. Sustainably grown, firm & flavourful. Bulk supply in 2 kg, 5 kg mesh bags. APEDA registered exporter.',
+      'Onion exporter from India — farm-fresh Maharashtra onions. Sustainably grown, firm & flavourful. Bulk supply in 2 kg, 5 kg mesh bags. APEDA registered exporter.',
     keywords: [
-      'fresh onion exporter India',
+      'onion exporter from India',
+      'fresh onion exporter from India',
       'onion bulk supplier Maharashtra',
       'Indian onion export',
       'farm fresh onion wholesale India',
@@ -180,15 +183,15 @@ export const productSeoData: ProductSeoData[] = [
   {
     id: 8,
     name: 'Onion Powder',
-    seoTitle: 'Onion Powder Exporter India | Dehydrated Onion Powder Bulk BFF',
+    seoTitle: 'Onion Powder Exporter from India | Dehydrated Onion Bulk — BFF',
     seoDescription:
-      'Premium dehydrated onion powder from India — no additives, consistent flavour. Bulk export in 25 kg bags. Ideal for food manufacturers, spice blenders & restaurants.',
+      'Onion powder exporter from India — premium dehydrated onion powder, no additives, consistent flavour. Bulk export in 25 kg bags. Ideal for food manufacturers & spice blenders.',
     keywords: [
-      'onion powder exporter India',
-      'dehydrated onion powder bulk supplier',
+      'onion powder exporter from India',
+      'onion exporter from India',
+      'dehydrated onion powder bulk supplier India',
       'onion powder manufacturer Maharashtra',
       'dried onion powder export India',
-      'onion powder wholesale India',
     ],
     details:
       'Processed from premium farm-fresh onions — hygienically cleaned, sliced, dehydrated at controlled temperatures, and finely ground for consistent flavour and aroma.',

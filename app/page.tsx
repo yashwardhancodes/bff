@@ -428,12 +428,12 @@ export default function Home() {
               </span>
 
               <h1 className="font-extrabold text-white leading-tight mb-5">
-                <span className="block text-4xl md:text-6xl">Premium Organic</span>
-                <span className="block text-4xl md:text-6xl text-amber-400">Frozen Vegetables</span>
+                <span className="block text-4xl md:text-6xl">Frozen Vegetables</span>
+                <span className="block text-4xl md:text-6xl text-amber-400">Exporter from India</span>
               </h1>
 
               <p className="text-lg text-white/75 mb-10">
-                Certified Indian exporter — corn, baby corn, peas &amp; mixed vegetables.
+                Sweet corn, baby corn, onion, green peas &amp; mixed vegetables — FSSAI certified, APEDA registered.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
@@ -727,6 +727,235 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Product Spotlight Section — keyword-rich content for Google */}
+      <section id="product-categories" className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              India&apos;s Premier Frozen Vegetable Exporter — Product Details
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Detailed export specifications for international importers, food manufacturers and distributors.
+            </p>
+          </div>
+
+          <div className="space-y-16">
+
+            {/* Sweet Corn */}
+            <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 items-start pb-16 border-b border-gray-100">
+              <div className="lg:col-span-3">
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                  Sweet Corn Exporter from India — IQF Frozen Corn Kernels &amp; Cobs
+                </h3>
+                <p className="text-gray-600 leading-relaxed mb-4">
+                  Baliraja Farm Fresh is one of India&apos;s top exporters of IQF frozen sweet corn kernels and whole corn cobs.
+                  Our sweet corn is harvested from 2000+ contracted farmers across Maharashtra and frozen within hours of harvest
+                  using Individual Quick Freezing (IQF) technology — locking in natural sweetness, bright yellow colour and full
+                  nutritional value. We supply frozen sweet corn in bulk to food manufacturers, supermarket chains and importers in
+                  UAE, Saudi Arabia, UK, USA, Germany and across Asia-Pacific.
+                </p>
+                <ul className="space-y-2 text-sm text-gray-600 mb-4">
+                  {[
+                    'Non-GMO, organic and pesticide-free sweet corn from Maharashtra',
+                    'IQF-frozen within hours of harvest at our Ahilyanagar facility',
+                    '50 MT daily processing capacity — consistent bulk supply guaranteed',
+                    'Available in 1 kg, 5 kg consumer packs and bulk export bags',
+                    'Custom labelling and private label for international markets',
+                  ].map((p) => (
+                    <li key={p} className="flex items-start gap-2">
+                      <span className="text-amber-500 font-bold mt-0.5 flex-shrink-0">✓</span>{p}
+                    </li>
+                  ))}
+                </ul>
+                <Link href="/products/1" className="inline-flex items-center gap-1 text-amber-600 font-semibold hover:text-amber-700 text-sm">
+                  View Frozen Sweet Corn Details →
+                </Link>
+              </div>
+              <div className="lg:col-span-2 bg-amber-50 rounded-xl p-6 border border-amber-100">
+                <h4 className="font-bold text-gray-800 mb-4 text-sm uppercase tracking-wide">Export Specifications</h4>
+                <div className="space-y-3 text-sm">
+                  {[
+                    ['Product', 'IQF Frozen Sweet Corn Kernels / Cobs'],
+                    ['Origin', 'Maharashtra, India'],
+                    ['Processing', 'Individual Quick Freezing (IQF)'],
+                    ['Shelf Life', '18 months at -18°C'],
+                    ['Certifications', 'FSSAI, APEDA, Organic'],
+                    ['Min Order', '1 MT per product'],
+                    ['Packing', '1 kg, 5 kg, bulk export bags'],
+                  ].map(([k, v]) => (
+                    <div key={k} className="flex gap-2">
+                      <span className="text-gray-500 font-medium w-28 flex-shrink-0">{k}:</span>
+                      <span className="text-gray-800">{v}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Baby Corn */}
+            <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 items-start pb-16 border-b border-gray-100">
+              <div className="lg:col-span-3">
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                  Baby Corn Exporter from India — Organic Frozen Baby Corn Bulk Supplier
+                </h3>
+                <p className="text-gray-600 leading-relaxed mb-4">
+                  Our organic frozen baby corn is hand-picked at the ideal stage of maturity and IQF-frozen at our
+                  Ahilyanagar facility within hours of harvest. One of the highest-demand export products for Asian
+                  cuisine, our baby corn is sourced directly from farmer networks across Maharashtra and processed
+                  under strict FSSAI and APEDA guidelines. We supply frozen baby corn to importers in UAE, UK, USA,
+                  Singapore, Japan and Australia — perfect for food service, retail and food manufacturing.
+                </p>
+                <ul className="space-y-2 text-sm text-gray-600 mb-4">
+                  {[
+                    '100% organic, hand-picked baby corn from Maharashtra farms',
+                    'Tender, crisp texture — ideal for stir-fries, salads, Asian cuisine',
+                    'IQF-frozen at peak freshness — no browning or sogginess',
+                    'Available in 500 g, 1 kg consumer packs and bulk export bags',
+                    'Phytosanitary certificate and full export documentation provided',
+                  ].map((p) => (
+                    <li key={p} className="flex items-start gap-2">
+                      <span className="text-amber-500 font-bold mt-0.5 flex-shrink-0">✓</span>{p}
+                    </li>
+                  ))}
+                </ul>
+                <Link href="/products/4" className="inline-flex items-center gap-1 text-amber-600 font-semibold hover:text-amber-700 text-sm">
+                  View Baby Corn Details →
+                </Link>
+              </div>
+              <div className="lg:col-span-2 bg-amber-50 rounded-xl p-6 border border-amber-100">
+                <h4 className="font-bold text-gray-800 mb-4 text-sm uppercase tracking-wide">Export Specifications</h4>
+                <div className="space-y-3 text-sm">
+                  {[
+                    ['Product', 'IQF Organic Frozen Baby Corn'],
+                    ['Origin', 'Maharashtra, India'],
+                    ['Processing', 'Individual Quick Freezing (IQF)'],
+                    ['Shelf Life', '18 months at -18°C'],
+                    ['Certifications', 'FSSAI, APEDA, Organic'],
+                    ['Min Order', '1 MT per product'],
+                    ['Packing', '500 g, 1 kg, bulk export bags'],
+                  ].map(([k, v]) => (
+                    <div key={k} className="flex gap-2">
+                      <span className="text-gray-500 font-medium w-28 flex-shrink-0">{k}:</span>
+                      <span className="text-gray-800">{v}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Mixed Veg & Green Peas */}
+            <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 items-start pb-16 border-b border-gray-100">
+              <div className="lg:col-span-3">
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                  Frozen Mixed Vegetables &amp; Green Peas Exporter from India
+                </h3>
+                <p className="text-gray-600 leading-relaxed mb-4">
+                  Our IQF frozen mixed vegetables — a blend of carrots, peas, sweet corn and green beans — and
+                  standalone frozen green peas are processed from organically grown produce sourced across Maharashtra.
+                  Both products are IQF-frozen at peak ripeness with no preservatives or additives. Ideal for ready-meal
+                  manufacturers, food service companies, and retail chains in the Middle East, Europe and North America,
+                  our frozen mixed vegetables and green peas are export-ready with full certification and cold chain logistics
+                  from our facility in Ahilyanagar to any global destination.
+                </p>
+                <ul className="space-y-2 text-sm text-gray-600 mb-4">
+                  {[
+                    '100% organic, four-vegetable blend — no preservatives',
+                    'IQF-frozen green peas — rich in protein and dietary fibre',
+                    'Consistent grading and sizing for retail and food service',
+                    'No washing or prep required — cook straight from frozen',
+                    'Available in 1 kg consumer packs and bulk export bags',
+                  ].map((p) => (
+                    <li key={p} className="flex items-start gap-2">
+                      <span className="text-amber-500 font-bold mt-0.5 flex-shrink-0">✓</span>{p}
+                    </li>
+                  ))}
+                </ul>
+                <div className="flex gap-4">
+                  <Link href="/products/3" className="inline-flex items-center gap-1 text-amber-600 font-semibold hover:text-amber-700 text-sm">
+                    View Mixed Vegetables →
+                  </Link>
+                  <Link href="/products/5" className="inline-flex items-center gap-1 text-amber-600 font-semibold hover:text-amber-700 text-sm">
+                    View Green Peas →
+                  </Link>
+                </div>
+              </div>
+              <div className="lg:col-span-2 bg-amber-50 rounded-xl p-6 border border-amber-100">
+                <h4 className="font-bold text-gray-800 mb-4 text-sm uppercase tracking-wide">Export Specifications</h4>
+                <div className="space-y-3 text-sm">
+                  {[
+                    ['Products', 'Mixed Veg Blend / IQF Green Peas'],
+                    ['Origin', 'Maharashtra, India'],
+                    ['Processing', 'Individual Quick Freezing (IQF)'],
+                    ['Shelf Life', '18 months at -18°C'],
+                    ['Certifications', 'FSSAI, APEDA, Organic'],
+                    ['Min Order', '1 MT per product'],
+                    ['Packing', '1 kg, 5 kg, bulk export bags'],
+                  ].map(([k, v]) => (
+                    <div key={k} className="flex gap-2">
+                      <span className="text-gray-500 font-medium w-28 flex-shrink-0">{k}:</span>
+                      <span className="text-gray-800">{v}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Onion Powder */}
+            <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 items-start">
+              <div className="lg:col-span-3">
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                  Onion Exporter from India — Fresh Onions &amp; Dehydrated Onion Powder
+                </h3>
+                <p className="text-gray-600 leading-relaxed mb-4">
+                  Baliraja Farm Fresh also exports premium dehydrated onion powder processed from farm-fresh onions
+                  grown across Maharashtra. Our onion powder is hygienically cleaned, sliced, dehydrated at controlled
+                  temperatures and finely ground to deliver a consistent flavour, aroma and fine texture.
+                  Free from artificial additives, it is ideal for food manufacturers, spice blenders, restaurant chains
+                  and FMCG brands worldwide. We also export fresh onions and dry mature maize in bulk.
+                  All export shipments come with full documentation including COA, Phytosanitary Certificate and HACCP records.
+                </p>
+                <ul className="space-y-2 text-sm text-gray-600 mb-4">
+                  {[
+                    'Made from 100% farm-fresh Maharashtra onions — no additives',
+                    'Fine, uniform texture with consistent pungency and aroma',
+                    'Available in 25 kg bulk export bags for food manufacturers',
+                    'Also available: fresh onions (5 kg mesh bags) and dry maize (bulk sacks)',
+                    'APEDA registered — full export documentation provided',
+                  ].map((p) => (
+                    <li key={p} className="flex items-start gap-2">
+                      <span className="text-amber-500 font-bold mt-0.5 flex-shrink-0">✓</span>{p}
+                    </li>
+                  ))}
+                </ul>
+                <Link href="/products/8" className="inline-flex items-center gap-1 text-amber-600 font-semibold hover:text-amber-700 text-sm">
+                  View Onion Powder Details →
+                </Link>
+              </div>
+              <div className="lg:col-span-2 bg-amber-50 rounded-xl p-6 border border-amber-100">
+                <h4 className="font-bold text-gray-800 mb-4 text-sm uppercase tracking-wide">Export Specifications</h4>
+                <div className="space-y-3 text-sm">
+                  {[
+                    ['Product', 'Dehydrated Onion Powder'],
+                    ['Origin', 'Maharashtra, India'],
+                    ['Processing', 'Dehydration & Fine Grinding'],
+                    ['Shelf Life', '18 months (sealed)'],
+                    ['Certifications', 'FSSAI, APEDA'],
+                    ['Min Order', '1 MT'],
+                    ['Packing', '25 kg bulk export bags'],
+                  ].map(([k, v]) => (
+                    <div key={k} className="flex gap-2">
+                      <span className="text-gray-500 font-medium w-28 flex-shrink-0">{k}:</span>
+                      <span className="text-gray-800">{v}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
       {/* FAQ Section */}
       <section id="faq" className="py-20 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -741,8 +970,24 @@ export default function Home() {
           <div className="space-y-4">
             {[
               {
+                q: 'Are you a sweet corn exporter from India?',
+                a: 'Yes. Baliraja Farm Fresh (BFF) is a leading sweet corn exporter from India. We export IQF frozen sweet corn kernels and whole corn cobs processed at our Ahilyanagar, Maharashtra facility. Our sweet corn is organic, non-GMO and supplied to importers in UAE, UK, USA, Germany and across Asia.',
+              },
+              {
+                q: 'Are you an onion exporter from India?',
+                a: 'Yes. Baliraja Farm Fresh exports fresh onions and dehydrated onion powder from Maharashtra, India. Our fresh onions are sustainably grown in Maharashtra and available in 2 kg and 5 kg mesh bags. Our onion powder is available in 25 kg bulk export bags — ideal for food manufacturers and spice blenders worldwide.',
+              },
+              {
+                q: 'Are you a baby corn exporter from India?',
+                a: 'Yes. We export organic IQF frozen baby corn from India. Hand-picked at peak freshness from Maharashtra farms and frozen within hours of harvest. Available in consumer packs and bulk export bags — perfect for Asian cuisine, food service and supermarket chains in UAE, UK, Singapore, Japan and beyond.',
+              },
+              {
+                q: 'Are you a green peas exporter from India?',
+                a: 'Yes. Baliraja Farm Fresh exports IQF organic frozen green peas from India. Harvested at peak ripeness and flash-frozen to lock in nutrition and sweetness. Available in 500 g, 1 kg, 5 kg and bulk export bags. We supply importers, food processors and distributors worldwide.',
+              },
+              {
                 q: 'Which frozen vegetables do you export from India?',
-                a: 'We export IQF frozen sweet corn kernels, frozen corn cobs, organic baby corn, frozen green peas, mixed vegetables, fresh onions, dry mature maize and onion powder — all processed at our facility in Ahilyanagar, Maharashtra, India.',
+                a: 'We are a frozen vegetables exporter from India supplying IQF sweet corn kernels, frozen corn cobs, organic baby corn, frozen green peas, mixed vegetables, fresh onions, dry maize and onion powder — all processed at our certified facility in Ahilyanagar, Maharashtra, India.',
               },
               {
                 q: 'Are you a FSSAI certified and APEDA registered frozen food exporter?',
@@ -754,7 +999,7 @@ export default function Home() {
               },
               {
                 q: 'Which countries do you export frozen sweet corn and vegetables to?',
-                a: 'We export frozen vegetables to UAE, Saudi Arabia, Qatar, United Kingdom, USA, Germany, Canada, Singapore, Australia and Japan, among others. We supply to importers, distributors, supermarket chains and food processors worldwide.',
+                a: 'We export frozen vegetables to UAE, Saudi Arabia, Qatar, United Kingdom, USA, Germany, Canada, Singapore, Australia and Japan, among others. We supply importers, distributors, supermarket chains and food processors worldwide.',
               },
               {
                 q: 'What is your production capacity for frozen vegetables?',
@@ -763,10 +1008,6 @@ export default function Home() {
               {
                 q: 'What export documentation do you provide?',
                 a: 'We provide all standard export documentation including Phytosanitary Certificate, Certificate of Analysis (COA), HACCP records, packing list, invoice and bill of lading. Our team handles complete documentation support for hassle-free import clearance.',
-              },
-              {
-                q: 'Where is Baliraja Farm Fresh located?',
-                a: 'Our registered office and manufacturing facility is at Sakharwadi, Talegaon Male, Ahilyanagar, Maharashtra – 413708, India. We source raw material from 2000+ farmers across Maharashtra.',
               },
             ].map(({ q, a }, i) => (
               <div key={i} className="bg-white rounded-xl border border-gray-200 p-6 shadow-sm">
