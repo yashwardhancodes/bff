@@ -613,23 +613,34 @@ export default function Home() {
 
           {/* Export Markets */}
           <div className="bg-white rounded-2xl p-8 shadow-sm border border-amber-100 mb-10">
-            <h3 className="text-xl font-bold text-gray-900 mb-6 text-center">We Export To</h3>
-            <div className="flex flex-wrap justify-center gap-3">
+            <h3 className="text-xl font-bold text-gray-900 mb-2 text-center">We Export To</h3>
+            <p className="text-gray-500 text-sm text-center mb-8">Supplying importers &amp; food manufacturers across 10+ countries</p>
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
               {[
-                { flag: '🇦🇪', name: 'UAE' },
-                { flag: '🇸🇦', name: 'Saudi Arabia' },
-                { flag: '🇶🇦', name: 'Qatar' },
-                { flag: '🇬🇧', name: 'United Kingdom' },
-                { flag: '🇺🇸', name: 'USA' },
-                { flag: '🇩🇪', name: 'Germany' },
-                { flag: '🇨🇦', name: 'Canada' },
-                { flag: '🇸🇬', name: 'Singapore' },
-                { flag: '🇦🇺', name: 'Australia' },
-                { flag: '🇯🇵', name: 'Japan' },
-              ].map(({ flag, name }) => (
-                <div key={name} className="flex items-center gap-2 bg-gray-50 px-4 py-2 rounded-full border border-gray-100">
-                  <span className="text-xl">{flag}</span>
-                  <span className="text-gray-700 font-medium text-sm">{name}</span>
+                { code: 'ae', name: 'UAE', region: 'Middle East' },
+                { code: 'sa', name: 'Saudi Arabia', region: 'Middle East' },
+                { code: 'qa', name: 'Qatar', region: 'Middle East' },
+                { code: 'gb', name: 'United Kingdom', region: 'Europe' },
+                { code: 'us', name: 'USA', region: 'North America' },
+                { code: 'de', name: 'Germany', region: 'Europe' },
+                { code: 'ca', name: 'Canada', region: 'North America' },
+                { code: 'sg', name: 'Singapore', region: 'Asia' },
+                { code: 'au', name: 'Australia', region: 'Asia Pacific' },
+                { code: 'jp', name: 'Japan', region: 'Asia' },
+              ].map(({ code, name, region }) => (
+                <div
+                  key={name}
+                  className="flex flex-col items-center gap-2 p-4 bg-gray-50 rounded-xl border border-gray-100 hover:border-amber-300 hover:bg-amber-50 hover:shadow-sm transition-all duration-200"
+                >
+                  <img
+                    src={`https://flagcdn.com/w80/${code}.png`}
+                    alt={`${name} flag`}
+                    width={52}
+                    height={35}
+                    className="rounded-md shadow-sm object-cover w-13 h-9"
+                  />
+                  <span className="text-gray-800 font-semibold text-sm text-center leading-tight">{name}</span>
+                  <span className="text-gray-400 text-xs text-center">{region}</span>
                 </div>
               ))}
             </div>
