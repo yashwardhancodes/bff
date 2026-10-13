@@ -204,6 +204,125 @@ export const productSeoData: ProductSeoData[] = [
     shelfLife: '18 months',
     category: 'Dehydrated Products',
   },
+  {
+    id: 9,
+    name: 'Frozen Okra Cut',
+    seoTitle: 'Frozen Okra Exporter from India | IQF Okra Cut (Bhindi) Bulk — BFF',
+    seoDescription:
+      'Frozen okra exporter from India — IQF cut okra (bhindi), uniformly cut, bright green and free-flowing. FSSAI certified, APEDA registered. Bulk export to UAE, UK, USA & worldwide.',
+    keywords: [
+      'frozen okra exporter from India',
+      'IQF okra cut exporter India',
+      'frozen bhindi exporter from India',
+      'frozen cut okra bulk supplier India',
+      'frozen vegetables exporter from India',
+    ],
+    details:
+      'Tender okra (bhindi) sourced from farms across Maharashtra, washed, trimmed, cut into uniform pieces and IQF-frozen within hours of harvest. Each piece stays separate and free-flowing — ready to cook straight from frozen for curries, stews and ready meals.',
+    highlights: [
+      'Tender, young okra — uniform cut pieces',
+      'IQF-frozen, free-flowing, no clumping',
+      'Bright green colour, no added preservatives',
+      'Available in retail packs and bulk export cartons',
+    ],
+    shelfLife: '18 months',
+    category: 'Frozen Okra',
+  },
+  {
+    id: 10,
+    name: 'Frozen Okra Whole',
+    seoTitle: 'Frozen Whole Okra Exporter from India | IQF Bhindi Whole — BFF',
+    seoDescription:
+      'Frozen whole okra exporter from India — IQF whole bhindi, tender pods, stem trimmed. FSSAI certified, APEDA registered. Bulk supply for importers, retailers & food service worldwide.',
+    keywords: [
+      'frozen whole okra exporter from India',
+      'frozen okra exporter from India',
+      'IQF whole okra bulk supplier India',
+      'frozen whole bhindi export India',
+      'frozen vegetables exporter from India',
+    ],
+    details:
+      'Young, tender okra pods selected for size and colour, stem-trimmed and IQF-frozen whole to keep their shape and texture. Ideal for bhindi masala, stuffed okra, bamia and Middle Eastern and South Asian dishes.',
+    highlights: [
+      'Hand-selected tender pods, stem trimmed',
+      'IQF-frozen whole — shape and texture retained',
+      'Popular with Middle East and South Asian buyers',
+      'Available in retail packs and bulk export cartons',
+    ],
+    shelfLife: '18 months',
+    category: 'Frozen Okra',
+  },
+  {
+    id: 11,
+    name: 'Frozen Bitter Gourd Slices',
+    seoTitle: 'Frozen Bitter Gourd Exporter from India | IQF Karela Slices — BFF',
+    seoDescription:
+      'Frozen bitter gourd exporter from India — IQF karela slices, uniformly cut and caliper-checked. FSSAI certified, APEDA registered. Bulk export to UAE, UK, USA, Canada & worldwide.',
+    keywords: [
+      'frozen bitter gourd exporter from India',
+      'frozen karela exporter from India',
+      'IQF bitter gourd slices bulk supplier India',
+      'frozen bitter melon exporter India',
+      'frozen vegetables exporter from India',
+    ],
+    details:
+      'Fresh green bitter gourd (karela) from Maharashtra farms, washed, sliced to a uniform thickness and IQF-frozen within hours. Slice thickness is checked with digital calipers on every batch, so the slices cook evenly in curries, stir-fries and fried dishes.',
+    highlights: [
+      'Uniform slices, approx. 4–5 mm, caliper-checked',
+      'IQF-frozen, deep green colour retained',
+      'High demand with South Asian diaspora markets',
+      'Available in retail packs and bulk export cartons',
+    ],
+    shelfLife: '18 months',
+    category: 'Frozen Bitter Gourd',
+  },
+  {
+    id: 12,
+    name: 'Frozen French Fries (Finger Chips)',
+    seoTitle: 'Frozen French Fries Exporter from India | Finger Chips Bulk — BFF',
+    seoDescription:
+      'Frozen French fries exporter from India — straight-cut potato finger chips, IQF-frozen and ready to fry. FSSAI certified, APEDA registered. Bulk supply for QSR, HoReCa & distributors.',
+    keywords: [
+      'frozen french fries exporter from India',
+      'frozen finger chips exporter India',
+      'frozen potato fries bulk supplier India',
+      'IQF french fries manufacturer India',
+      'frozen vegetables exporter from India',
+    ],
+    details:
+      'Straight-cut potato fries (finger chips) made from selected potatoes, IQF-frozen to keep each strip separate. Fry straight from frozen for a golden, crisp outside and soft inside — built for quick-service restaurants, hotels, caterers and retail.',
+    highlights: [
+      'Straight-cut, consistent length and thickness',
+      'IQF-frozen — fry straight from the freezer',
+      'Ideal for QSR, HoReCa and retail',
+      'Available in retail packs and bulk export cartons',
+    ],
+    shelfLife: '18 months',
+    category: 'Frozen French Fries',
+  },
+  {
+    id: 13,
+    name: 'Frozen Broccoli Florets',
+    seoTitle: 'Frozen Broccoli Exporter from India | IQF Broccoli Florets — BFF',
+    seoDescription:
+      'Frozen broccoli exporter from India — IQF broccoli florets, bright green and uniformly cut. FSSAI certified, APEDA registered. Bulk supply for importers, food processors & food service.',
+    keywords: [
+      'frozen broccoli exporter from India',
+      'IQF broccoli florets bulk supplier India',
+      'frozen broccoli manufacturer India',
+      'frozen vegetables exporter from India',
+    ],
+    details:
+      'Fresh broccoli heads cut into florets, blanched and IQF-frozen to keep their bright green colour, firm bite and nutrients. Ready for stir-fries, pasta, soups, salads and ready-meal production.',
+    highlights: [
+      'Uniformly cut florets, bright green colour',
+      'IQF-frozen — free-flowing, no clumping',
+      'Rich in vitamin C and dietary fibre',
+      'Available in retail packs and bulk export cartons',
+    ],
+    shelfLife: '18 months',
+    category: 'Frozen Broccoli',
+  },
 ]
 
 export function getProductSeo(id: number): ProductSeoData | undefined {

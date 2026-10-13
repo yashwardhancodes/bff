@@ -19,6 +19,11 @@ import maize from '@/public/maize.png'
 import onion from '@/public/onion.png'
 import onionPowder from '@/public/onionPowder.jpg'
 import peas from '@/public/peas.png'
+import okraCut from '@/public/okra-cut.jpg'
+import okraWhole from '@/public/okra-whole.jpg'
+import bitterGourd from '@/public/bitter-gourd.jpg'
+import frenchFries from '@/public/french-fries.jpg'
+import broccoli from '@/public/broccoli.jpg'
 
 // Define TypeScript interface for product data
 interface Product {
@@ -207,6 +212,156 @@ export default function Home() {
       },
     },
     {
+      id: 9,
+      name: 'Frozen Okra Cut',
+      description: 'Tender okra (bhindi) cut into uniform pieces and IQF-frozen — free-flowing and ready to cook.',
+      image: okraCut,
+      details: 'Tender okra sourced from farms across Maharashtra, washed, trimmed, cut into uniform pieces and IQF-frozen within hours of harvest. Each piece stays separate and free-flowing — cook straight from frozen for curries, stews and ready meals.',
+      highlights: [
+        'Tender, young okra — uniform cut pieces',
+        'IQF-frozen, free-flowing, no clumping',
+        'Bright green colour, no added preservatives',
+        'Available in retail packs and bulk export cartons',
+      ],
+      nutrition: {
+        servingSize: '100g',
+        calories: 33,
+        totalFat: '0.2g',
+        sodium: '7mg',
+        totalCarbs: '7g',
+        protein: '1.9g',
+      },
+      storage: {
+        instructions: 'Store in freezer at -18°C or below. Do not refreeze once thawed.',
+        shelfLife: '18 months from production date',
+        usageTips: [
+          'Cook straight from frozen — no thawing needed',
+          'Perfect for bhindi masala and okra curry',
+          'Add to stews, gumbo and ready meals',
+        ],
+      },
+    },
+    {
+      id: 10,
+      name: 'Frozen Okra Whole',
+      description: 'Young, tender whole okra pods, stem-trimmed and IQF-frozen to keep their shape and texture.',
+      image: okraWhole,
+      details: 'Young, tender okra pods selected for size and colour, stem-trimmed and IQF-frozen whole to keep their shape and texture. Ideal for bhindi masala, stuffed okra, bamia and Middle Eastern and South Asian dishes.',
+      highlights: [
+        'Hand-selected tender pods, stem trimmed',
+        'IQF-frozen whole — shape and texture retained',
+        'Popular with Middle East and South Asian buyers',
+        'Available in retail packs and bulk export cartons',
+      ],
+      nutrition: {
+        servingSize: '100g',
+        calories: 33,
+        totalFat: '0.2g',
+        sodium: '7mg',
+        totalCarbs: '7g',
+        protein: '1.9g',
+      },
+      storage: {
+        instructions: 'Store in freezer at -18°C or below. Do not refreeze once thawed.',
+        shelfLife: '18 months from production date',
+        usageTips: [
+          'Ideal for stuffed bhindi and bamia',
+          'Shallow-fry or roast straight from frozen',
+          'Great for tempura and grilled sides',
+        ],
+      },
+    },
+    {
+      id: 11,
+      name: 'Frozen Bitter Gourd Slices',
+      description: 'Fresh green bitter gourd (karela) sliced to a uniform thickness and IQF-frozen.',
+      image: bitterGourd,
+      details: 'Fresh green bitter gourd (karela) from Maharashtra farms, washed, sliced to a uniform thickness and IQF-frozen within hours. Slice thickness is checked with digital calipers on every batch, so the slices cook evenly in curries, stir-fries and fried dishes.',
+      highlights: [
+        'Uniform slices, approx. 4–5 mm, caliper-checked',
+        'IQF-frozen, deep green colour retained',
+        'High demand with South Asian diaspora markets',
+        'Available in retail packs and bulk export cartons',
+      ],
+      nutrition: {
+        servingSize: '100g',
+        calories: 17,
+        totalFat: '0.2g',
+        sodium: '5mg',
+        totalCarbs: '3.7g',
+        protein: '1g',
+      },
+      storage: {
+        instructions: 'Store in freezer at -18°C or below. Do not refreeze once thawed.',
+        shelfLife: '18 months from production date',
+        usageTips: [
+          'Fry straight from frozen for crispy karela',
+          'Perfect for karela sabzi and stir-fries',
+          'Use in curries, stuffed dishes and juices',
+        ],
+      },
+    },
+    {
+      id: 12,
+      name: 'Frozen French Fries (Finger Chips)',
+      description: 'Straight-cut potato finger chips, IQF-frozen — fry straight from frozen for golden, crisp fries.',
+      image: frenchFries,
+      details: 'Straight-cut potato fries (finger chips) made from selected potatoes, IQF-frozen to keep each strip separate. Fry straight from frozen for a golden, crisp outside and soft inside — built for quick-service restaurants, hotels, caterers and retail.',
+      highlights: [
+        'Straight-cut, consistent length and thickness',
+        'IQF-frozen — fry straight from the freezer',
+        'Ideal for QSR, HoReCa and retail',
+        'Available in retail packs and bulk export cartons',
+      ],
+      nutrition: {
+        servingSize: '100g (frozen)',
+        calories: 150,
+        totalFat: '5g',
+        sodium: '30mg',
+        totalCarbs: '24g',
+        protein: '2.3g',
+      },
+      storage: {
+        instructions: 'Store in freezer at -18°C or below. Do not thaw before frying.',
+        shelfLife: '18 months from production date',
+        usageTips: [
+          'Deep-fry at 175°C for 3–4 minutes',
+          'Air-fry or oven-bake for a lighter option',
+          'Season with salt, peri-peri or masala',
+        ],
+      },
+    },
+    {
+      id: 13,
+      name: 'Frozen Broccoli Florets',
+      description: 'Bright green broccoli florets, uniformly cut and IQF-frozen to lock in colour and nutrients.',
+      image: broccoli,
+      details: 'Fresh broccoli heads cut into florets, blanched and IQF-frozen to keep their bright green colour, firm bite and nutrients. Ready for stir-fries, pasta, soups, salads and ready-meal production.',
+      highlights: [
+        'Uniformly cut florets, bright green colour',
+        'IQF-frozen — free-flowing, no clumping',
+        'Rich in vitamin C and dietary fibre',
+        'Available in retail packs and bulk export cartons',
+      ],
+      nutrition: {
+        servingSize: '100g',
+        calories: 28,
+        totalFat: '0.3g',
+        sodium: '24mg',
+        totalCarbs: '5.4g',
+        protein: '3g',
+      },
+      storage: {
+        instructions: 'Store in freezer at -18°C or below. Do not refreeze once thawed.',
+        shelfLife: '18 months from production date',
+        usageTips: [
+          'Steam for 3–4 minutes straight from frozen',
+          'Add to stir-fries, pasta and soups',
+          'Roast with olive oil and garlic',
+        ],
+      },
+    },
+    {
       id: 6,
       name: 'Fresh Onions',
       description: 'Farm-fresh onions, harvested from sustainable fields for everyday cooking.',
@@ -390,7 +545,7 @@ export default function Home() {
                                     Contact
                                 </a>
                                 <a
-                                    href="/brochure.pdf"
+                                    href="/Baliraja.pdf"
                                     download="Baliraja_Farm_Fresh_Brochure.pdf"
                                     className="flex items-center justify-center gap-2 w-full mt-2 bg-amber-500 hover:bg-amber-600 text-white font-semibold text-sm px-4 py-2.5 rounded-md transition-colors"
                                 >
@@ -405,17 +560,30 @@ export default function Home() {
 
       {/* Hero Section */}
       <section id="home" className="relative min-h-screen flex items-center">
-        {/* Background — gradient darker on left for readability, vivid corn visible on right */}
-        <div
-          className="absolute inset-0 z-0"
-          style={{
-            backgroundImage:
-              'url("https://images.pexels.com/photos/547263/pexels-photo-547263.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1280&fit=crop")',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-          }}
-        >
-          <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/70 to-black/50" />
+        {/* Background — mosaic of the frozen vegetable range, gradient darker on left for readability */}
+        <div className="absolute inset-0 z-0 grid grid-cols-2 grid-rows-4 md:grid-cols-4 md:grid-rows-2">
+          {[
+            { src: mixed, alt: 'Frozen mixed vegetables' },
+            { src: okraWhole, alt: 'Frozen whole okra' },
+            { src: frozen, alt: 'IQF frozen sweet corn kernels' },
+            { src: bitterGourd, alt: 'Frozen bitter gourd slices' },
+            { src: peas, alt: 'Frozen green peas' },
+            { src: okraCut, alt: 'Frozen cut okra' },
+            { src: broccoli, alt: 'Frozen broccoli florets' },
+            { src: frenchFries, alt: 'Frozen French fries' },
+          ].map(({ src, alt }, i) => (
+            <div key={alt} className="relative overflow-hidden">
+              <Image
+                src={src}
+                alt={alt}
+                fill
+                priority={i < 4}
+                sizes="(min-width: 768px) 25vw, 50vw"
+                className="object-cover"
+              />
+            </div>
+          ))}
+          <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/65 to-black/40" />
         </div>
 
         <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-28">
@@ -424,7 +592,7 @@ export default function Home() {
             {/* LEFT */}
             <div>
               <span className="inline-block bg-amber-500 text-white text-xs font-bold px-3 py-1.5 rounded uppercase tracking-widest mb-7">
-                Est. 1985 · India
+                Est. 2020 · India
               </span>
 
               <h1 className="font-extrabold text-white leading-tight mb-5">
@@ -433,7 +601,8 @@ export default function Home() {
               </h1>
 
               <p className="text-lg text-white/75 mb-10">
-                Sweet corn, baby corn, onion, green peas &amp; mixed vegetables — FSSAI certified, APEDA registered.
+                IQF sweet corn, okra, bitter gourd, French fries, broccoli, baby corn, green peas &amp; mixed
+                vegetables. FSSAI certified, APEDA registered.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
@@ -457,9 +626,9 @@ export default function Home() {
               <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 w-full max-w-xs">
                 <div className="grid grid-cols-2 gap-3">
                   {[
-                    { number: '38+',  label: 'Years' },
+                    { number: '50 MT', label: 'Daily Capacity' },
                     { number: '10+',  label: 'Countries' },
-                    { number: '7',    label: 'Products' },
+                    { number: '13',   label: 'Products' },
                     { number: '18mo', label: 'Shelf Life' },
                   ].map(({ number, label }) => (
                     <div key={label} className="bg-white/10 rounded-xl p-4 text-center">
@@ -491,8 +660,8 @@ export default function Home() {
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Baliraja Farm Fresh is a FSSAI certified, APEDA registered frozen vegetables exporter
-              from Maharashtra, India — supplying IQF frozen sweet corn, baby corn, green peas,
-              mixed vegetables and onion powder to global buyers since 1985.
+              from Maharashtra, India. Since 2020 we have supplied global buyers with IQF frozen
+              sweet corn, okra, bitter gourd, French fries, broccoli, baby corn, green peas and mixed vegetables.
             </p>
           </div>
 
@@ -508,8 +677,9 @@ export default function Home() {
                       IQF Frozen Vegetables — 50 MT/Day
                     </h3>
                     <p className="text-gray-600">
-                      Advanced IQF processing plant with 50 MT daily capacity — frozen sweet corn,
-                      baby corn, green peas and mixed vegetables processed and packed to international food safety standards.
+                      Advanced IQF processing plant with 50 MT daily capacity. Frozen sweet corn, okra,
+                      bitter gourd, French fries, broccoli, baby corn, green peas and mixed vegetables are
+                      processed and packed to international food safety standards.
                     </p>
                   </div>
                 </div>
@@ -572,9 +742,9 @@ export default function Home() {
               Frozen Vegetables Exporter from India — Bulk Supply Worldwide
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              We export IQF frozen sweet corn, baby corn, frozen green peas, mixed vegetables
-              and onion powder to importers, distributors and food-service chains across the
-              Middle East, Europe, North America and Southeast Asia.
+              We export IQF frozen sweet corn, okra, bitter gourd, French fries, broccoli, baby corn,
+              green peas, mixed vegetables and onion powder to importers, distributors and food-service
+              chains across the Middle East, Europe, North America and Southeast Asia.
             </p>
           </div>
 
@@ -696,8 +866,8 @@ export default function Home() {
               Frozen Vegetables for Export — Our Product Range
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              IQF frozen sweet corn, baby corn, green peas, mixed vegetables and onion powder —
-              all export-ready from our certified processing facility in Maharashtra, India.
+              IQF frozen sweet corn, okra (cut &amp; whole), bitter gourd, French fries, broccoli, baby corn,
+              green peas and mixed vegetables, all export-ready from our certified processing facility in Maharashtra, India.
             </p>
           </div>
 
@@ -854,11 +1024,168 @@ export default function Home() {
               </div>
             </div>
 
+            {/* Okra */}
+            <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 items-start pb-16 border-b border-gray-100">
+              <div className="lg:col-span-3">
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                  Frozen Okra Exporter from India — IQF Okra Cut &amp; Whole (Bhindi)
+                </h3>
+                <p className="text-gray-600 leading-relaxed mb-4">
+                  We export IQF frozen okra in two formats: uniform cut pieces and whole stem-trimmed pods. Tender okra
+                  is sourced from farms across Maharashtra, washed, graded and IQF-frozen within hours of harvest, so
+                  every piece stays separate, bright green and free-flowing. Frozen okra is one of the most requested
+                  Indian vegetables in the Middle East, UK, USA and Canada, and our bulk supply serves importers,
+                  ethnic retail chains, ready-meal makers and restaurants.
+                </p>
+                <ul className="space-y-2 text-sm text-gray-600 mb-4">
+                  {[
+                    'Frozen okra cut: uniform pieces, ready for curries and stews',
+                    'Frozen okra whole: tender pods, stem trimmed, for bhindi masala and bamia',
+                    'IQF-frozen: free-flowing, no clumping, no added preservatives',
+                    'Retail packs and bulk export cartons, private label available',
+                    'Phytosanitary certificate and full export documentation provided',
+                  ].map((p) => (
+                    <li key={p} className="flex items-start gap-2">
+                      <span className="text-amber-500 font-bold mt-0.5 flex-shrink-0">✓</span>{p}
+                    </li>
+                  ))}
+                </ul>
+                <div className="flex gap-4">
+                  <Link href="/products/9" className="inline-flex items-center gap-1 text-amber-600 font-semibold hover:text-amber-700 text-sm">
+                    View Okra Cut →
+                  </Link>
+                  <Link href="/products/10" className="inline-flex items-center gap-1 text-amber-600 font-semibold hover:text-amber-700 text-sm">
+                    View Okra Whole →
+                  </Link>
+                </div>
+              </div>
+              <div className="lg:col-span-2 bg-amber-50 rounded-xl p-6 border border-amber-100">
+                <h4 className="font-bold text-gray-800 mb-4 text-sm uppercase tracking-wide">Export Specifications</h4>
+                <div className="space-y-3 text-sm">
+                  {[
+                    ['Products', 'IQF Frozen Okra Cut / Okra Whole'],
+                    ['Origin', 'Maharashtra, India'],
+                    ['Processing', 'Individual Quick Freezing (IQF)'],
+                    ['Shelf Life', '18 months at -18°C'],
+                    ['Certifications', 'FSSAI, APEDA'],
+                    ['Min Order', '1 MT per product'],
+                    ['Packing', 'Retail packs, bulk export cartons'],
+                  ].map(([k, v]) => (
+                    <div key={k} className="flex gap-2">
+                      <span className="text-gray-500 font-medium w-28 flex-shrink-0">{k}:</span>
+                      <span className="text-gray-800">{v}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Bitter Gourd */}
+            <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 items-start pb-16 border-b border-gray-100">
+              <div className="lg:col-span-3">
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                  Frozen Bitter Gourd Exporter from India — IQF Karela Slices
+                </h3>
+                <p className="text-gray-600 leading-relaxed mb-4">
+                  Our frozen bitter gourd (karela) is sliced from fresh green gourds grown in Maharashtra and IQF-frozen
+                  within hours. We check slice thickness with digital calipers on every batch, so the slices are uniform
+                  and cook evenly. Frozen karela is in steady demand with South Asian communities in the UAE, UK, USA,
+                  Canada and Australia, and we supply it in bulk to importers, ethnic grocers and food service.
+                </p>
+                <ul className="space-y-2 text-sm text-gray-600 mb-4">
+                  {[
+                    'Uniform slices, approx. 4–5 mm, caliper-checked on every batch',
+                    'Deep green colour retained by IQF freezing',
+                    'Cook straight from frozen: fry, stir-fry or curry',
+                    'Retail packs and bulk export cartons, private label available',
+                    'Full export documentation: COA, Phytosanitary, HACCP',
+                  ].map((p) => (
+                    <li key={p} className="flex items-start gap-2">
+                      <span className="text-amber-500 font-bold mt-0.5 flex-shrink-0">✓</span>{p}
+                    </li>
+                  ))}
+                </ul>
+                <Link href="/products/11" className="inline-flex items-center gap-1 text-amber-600 font-semibold hover:text-amber-700 text-sm">
+                  View Bitter Gourd Details →
+                </Link>
+              </div>
+              <div className="lg:col-span-2 bg-amber-50 rounded-xl p-6 border border-amber-100">
+                <h4 className="font-bold text-gray-800 mb-4 text-sm uppercase tracking-wide">Export Specifications</h4>
+                <div className="space-y-3 text-sm">
+                  {[
+                    ['Product', 'IQF Frozen Bitter Gourd Slices'],
+                    ['Origin', 'Maharashtra, India'],
+                    ['Processing', 'Individual Quick Freezing (IQF)'],
+                    ['Slice', 'Approx. 4–5 mm, caliper-checked'],
+                    ['Shelf Life', '18 months at -18°C'],
+                    ['Certifications', 'FSSAI, APEDA'],
+                    ['Min Order', '1 MT per product'],
+                    ['Packing', 'Retail packs, bulk export cartons'],
+                  ].map(([k, v]) => (
+                    <div key={k} className="flex gap-2">
+                      <span className="text-gray-500 font-medium w-28 flex-shrink-0">{k}:</span>
+                      <span className="text-gray-800">{v}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* French Fries */}
+            <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 items-start pb-16 border-b border-gray-100">
+              <div className="lg:col-span-3">
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                  Frozen French Fries Exporter from India — Potato Finger Chips
+                </h3>
+                <p className="text-gray-600 leading-relaxed mb-4">
+                  Our frozen French fries (finger chips) are straight-cut from selected potatoes and IQF-frozen so each
+                  strip stays separate. They fry straight from frozen to a golden, crisp finish, which makes them a
+                  dependable choice for quick-service restaurants, hotels, caterers, cloud kitchens and supermarket
+                  freezer aisles. We supply bulk cartons for HoReCa and distributors, and retail packs for private label.
+                </p>
+                <ul className="space-y-2 text-sm text-gray-600 mb-4">
+                  {[
+                    'Straight-cut fries with consistent length and thickness',
+                    'IQF-frozen: fry, air-fry or oven-bake straight from frozen',
+                    'Built for QSR, HoReCa, cloud kitchens and retail',
+                    'Bulk export cartons and private-label retail packs',
+                    'Cold chain logistics from our facility to port',
+                  ].map((p) => (
+                    <li key={p} className="flex items-start gap-2">
+                      <span className="text-amber-500 font-bold mt-0.5 flex-shrink-0">✓</span>{p}
+                    </li>
+                  ))}
+                </ul>
+                <Link href="/products/12" className="inline-flex items-center gap-1 text-amber-600 font-semibold hover:text-amber-700 text-sm">
+                  View French Fries Details →
+                </Link>
+              </div>
+              <div className="lg:col-span-2 bg-amber-50 rounded-xl p-6 border border-amber-100">
+                <h4 className="font-bold text-gray-800 mb-4 text-sm uppercase tracking-wide">Export Specifications</h4>
+                <div className="space-y-3 text-sm">
+                  {[
+                    ['Product', 'Frozen French Fries (Finger Chips)'],
+                    ['Origin', 'India'],
+                    ['Processing', 'Straight-cut, IQF-frozen'],
+                    ['Shelf Life', '18 months at -18°C'],
+                    ['Certifications', 'FSSAI, APEDA'],
+                    ['Min Order', '1 MT per product'],
+                    ['Packing', 'Retail packs, bulk export cartons'],
+                  ].map(([k, v]) => (
+                    <div key={k} className="flex gap-2">
+                      <span className="text-gray-500 font-medium w-28 flex-shrink-0">{k}:</span>
+                      <span className="text-gray-800">{v}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
             {/* Mixed Veg & Green Peas */}
             <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 items-start pb-16 border-b border-gray-100">
               <div className="lg:col-span-3">
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">
-                  Frozen Mixed Vegetables &amp; Green Peas Exporter from India
+                  Frozen Mixed Vegetables, Green Peas &amp; Broccoli Exporter from India
                 </h3>
                 <p className="text-gray-600 leading-relaxed mb-4">
                   Our IQF frozen mixed vegetables — a blend of carrots, peas, sweet corn and green beans — and
@@ -873,6 +1200,7 @@ export default function Home() {
                     '100% organic, four-vegetable blend — no preservatives',
                     'IQF-frozen green peas — rich in protein and dietary fibre',
                     'Consistent grading and sizing for retail and food service',
+                    'IQF broccoli florets — bright green, uniformly cut',
                     'No washing or prep required — cook straight from frozen',
                     'Available in 1 kg consumer packs and bulk export bags',
                   ].map((p) => (
@@ -888,13 +1216,16 @@ export default function Home() {
                   <Link href="/products/5" className="inline-flex items-center gap-1 text-amber-600 font-semibold hover:text-amber-700 text-sm">
                     View Green Peas →
                   </Link>
+                  <Link href="/products/13" className="inline-flex items-center gap-1 text-amber-600 font-semibold hover:text-amber-700 text-sm">
+                    View Broccoli →
+                  </Link>
                 </div>
               </div>
               <div className="lg:col-span-2 bg-amber-50 rounded-xl p-6 border border-amber-100">
                 <h4 className="font-bold text-gray-800 mb-4 text-sm uppercase tracking-wide">Export Specifications</h4>
                 <div className="space-y-3 text-sm">
                   {[
-                    ['Products', 'Mixed Veg Blend / IQF Green Peas'],
+                    ['Products', 'Mixed Veg Blend / Green Peas / Broccoli'],
                     ['Origin', 'Maharashtra, India'],
                     ['Processing', 'Individual Quick Freezing (IQF)'],
                     ['Shelf Life', '18 months at -18°C'],
@@ -997,8 +1328,20 @@ export default function Home() {
                 a: 'Yes. Baliraja Farm Fresh exports IQF organic frozen green peas from India. Harvested at peak ripeness and flash-frozen to lock in nutrition and sweetness. Available in 500 g, 1 kg, 5 kg and bulk export bags. We supply importers, food processors and distributors worldwide.',
               },
               {
+                q: 'Are you a frozen okra exporter from India?',
+                a: 'Yes. We export IQF frozen okra (bhindi) from India in two formats: frozen okra cut and frozen okra whole. Tender okra is washed, graded and IQF-frozen within hours of harvest, so it stays free-flowing and bright green. Available in retail packs and bulk export cartons for importers in the Middle East, UK, USA and Canada.',
+              },
+              {
+                q: 'Do you export frozen bitter gourd (karela)?',
+                a: 'Yes. Baliraja Farm Fresh exports IQF frozen bitter gourd slices from India. Slices are cut to a uniform thickness of approx. 4–5 mm, checked with digital calipers on every batch, and IQF-frozen to keep their green colour. Supplied in bulk to importers and ethnic grocers worldwide.',
+              },
+              {
+                q: 'Do you export frozen French fries (finger chips)?',
+                a: 'Yes. We export straight-cut frozen French fries (potato finger chips) from India. They are IQF-frozen and fry straight from frozen, making them ideal for QSR, hotels, caterers and retail. Available in bulk export cartons and private-label retail packs.',
+              },
+              {
                 q: 'Which frozen vegetables do you export from India?',
-                a: 'We are a frozen vegetables exporter from India supplying IQF sweet corn kernels, frozen corn cobs, organic baby corn, frozen green peas, mixed vegetables, fresh onions, dry maize and onion powder — all processed at our certified facility in Ahilyanagar, Maharashtra, India.',
+                a: 'We are a frozen vegetables exporter from India supplying a full IQF range: sweet corn kernels, frozen corn cobs, baby corn, frozen okra (cut and whole), frozen bitter gourd, frozen French fries, frozen broccoli, green peas and mixed vegetables. We also supply fresh onions, dry maize and onion powder from our certified facility in Ahilyanagar, Maharashtra, India.',
               },
               {
                 q: 'Are you a FSSAI certified and APEDA registered frozen food exporter?',

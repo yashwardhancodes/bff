@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { productSeoData } from '@/lib/productData';
 
 const BASE_URL = 'https://bfffrozencorns.com';
-const LAST_UPDATED = '2026-06-08';
+const LAST_UPDATED = '2026-10-13';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const productRoutes: MetadataRoute.Sitemap = productSeoData.map((product) => ({

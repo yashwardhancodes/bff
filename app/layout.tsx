@@ -3,6 +3,7 @@ import './whatsapp-icon.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import Image from 'next/image';
+import { productSeoData } from '@/lib/productData';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -11,17 +12,25 @@ const BASE_URL = 'https://bfffrozencorns.com';
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
-    default: 'Sweet Corn Exporter from India | Onion, Baby Corn, Frozen Vegetables — BFF',
+    default: 'Frozen Vegetables Exporter from India | IQF Sweet Corn, Okra, Bitter Gourd, Fries — BFF',
     template: '%s | BFF Frozen Corns — Exporter from India',
   },
   description:
-    'Baliraja Farm Fresh (BFF) — sweet corn exporter from India, onion exporter from India, baby corn & frozen vegetables exporter. FSSAI certified, APEDA registered. 50 MT/day IQF plant in Maharashtra. Bulk supply to UAE, UK, USA, Europe & Asia.',
+    'Baliraja Farm Fresh (BFF) — frozen vegetables exporter from India: IQF sweet corn, frozen okra cut & whole, bitter gourd, French fries, broccoli, baby corn, green peas & mixed vegetables. FSSAI certified, APEDA registered. 50 MT/day IQF plant in Maharashtra. Bulk supply worldwide.',
   keywords: [
+    'frozen vegetables exporter from India',
     'sweet corn exporter from India',
+    'frozen sweet corn exporter from India',
+    'frozen okra exporter from India',
+    'frozen okra cut exporter India',
+    'frozen whole okra exporter India',
+    'frozen bitter gourd exporter from India',
+    'frozen karela exporter India',
+    'frozen french fries exporter from India',
+    'frozen finger chips exporter India',
+    'frozen broccoli exporter from India',
     'onion exporter from India',
     'baby corn exporter from India',
-    'frozen vegetables exporter from India',
-    'frozen sweet corn exporter from India',
     'green peas exporter from India',
     'onion powder exporter from India',
     'frozen mixed vegetables exporter from India',
@@ -46,9 +55,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     url: BASE_URL,
-    title: 'BFF Frozen Corns | Organic Frozen Vegetables Exporter from India',
+    title: 'BFF Frozen Corns | Frozen Vegetables Exporter from India',
     description:
-      'Leading Indian exporter of certified organic frozen corn, baby corn, green peas & mixed vegetables. FSSAI certified, APEDA registered. Trusted by buyers across Middle East, Europe & USA.',
+      'Indian exporter of IQF frozen sweet corn, okra, bitter gourd, French fries, broccoli, baby corn, green peas & mixed vegetables. FSSAI certified, APEDA registered. Trusted by buyers across Middle East, Europe & USA.',
     siteName: 'BFF Frozen Corns — Baliraja Farm Fresh',
     images: [
       {
@@ -62,9 +71,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'BFF Frozen Corns | Organic Frozen Vegetables Exporter India',
+    title: 'BFF Frozen Corns | Frozen Vegetables Exporter India',
     description:
-      'Premium organic frozen vegetables exported from Indian farms. FSSAI certified, APEDA registered. Bulk supply worldwide.',
+      'IQF frozen sweet corn, okra, bitter gourd, French fries, broccoli & more, exported from Indian farms. FSSAI certified, APEDA registered. Bulk supply worldwide.',
     images: ['/logo.png'],
   },
   robots: {
@@ -109,8 +118,8 @@ export default function RootLayout({
         },
         image: `${BASE_URL}/logo.png`,
         description:
-          'Leading Indian exporter of certified organic frozen vegetables — frozen corn, baby corn, green peas, mixed vegetables and onion powder. FSSAI certified, APEDA registered. 50 MT/day processing capacity. Supplying 10+ countries since 1985.',
-        foundingDate: '1985',
+          'IQF frozen vegetables exporter from India — frozen sweet corn, okra (cut and whole), bitter gourd, French fries, broccoli, baby corn, green peas, mixed vegetables and onion powder. FSSAI certified, APEDA registered. 50 MT/day processing capacity. Supplying 10+ countries since 2020.',
+        foundingDate: '2020',
         numberOfEmployees: { '@type': 'QuantitativeValue', minValue: 50 },
         address: {
           '@type': 'PostalAddress',
@@ -142,16 +151,10 @@ export default function RootLayout({
         hasOfferCatalog: {
           '@type': 'OfferCatalog',
           name: 'Frozen Vegetables Export Catalogue',
-          itemListElement: [
-            'Organic Sweet Corn Kernels',
-            'Frozen Corn Cobs',
-            'Organic Mixed Vegetables',
-            'Organic Frozen Baby Corns',
-            'Organic Green Peas',
-            'Fresh Onions',
-            'Dry Mature Maize',
-            'Onion Powder',
-          ].map((name) => ({ '@type': 'Offer', itemOffered: { '@type': 'Product', name } })),
+          itemListElement: productSeoData.map(({ id, name }) => ({
+            '@type': 'Offer',
+            itemOffered: { '@type': 'Product', name, url: `${BASE_URL}/products/${id}` },
+          })),
         },
         sameAs: [
           'https://www.instagram.com',
@@ -185,7 +188,7 @@ export default function RootLayout({
         url: BASE_URL,
         name: 'BFF Frozen Corns — Baliraja Farm Fresh',
         description:
-          'Organic frozen vegetables exporter from India. Bulk supply of IQF frozen corn, baby corn, green peas, mixed vegetables and onion powder.',
+          'Frozen vegetables exporter from India. Bulk supply of IQF frozen sweet corn, okra, bitter gourd, French fries, broccoli, baby corn, green peas, mixed vegetables and onion powder.',
         publisher: { '@id': `${BASE_URL}/#organization` },
         inLanguage: 'en-US',
         potentialAction: {
@@ -234,10 +237,34 @@ export default function RootLayout({
           },
           {
             '@type': 'Question',
+            name: 'Are you a frozen okra exporter from India?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Yes. We export IQF frozen okra (bhindi) from India in two formats: frozen okra cut and frozen okra whole. Tender okra is washed, graded and IQF-frozen within hours of harvest, so it stays free-flowing and bright green. Available in retail packs and bulk export cartons for importers in the Middle East, UK, USA and Canada.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Do you export frozen bitter gourd (karela)?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Yes. Baliraja Farm Fresh exports IQF frozen bitter gourd slices from India. Slices are cut to a uniform thickness of approx. 4–5 mm, checked with digital calipers on every batch, and IQF-frozen to keep their green colour. Supplied in bulk to importers and ethnic grocers worldwide.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Do you export frozen French fries (finger chips)?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Yes. We export straight-cut frozen French fries (potato finger chips) from India. They are IQF-frozen and fry straight from frozen, making them ideal for QSR, hotels, caterers and retail. Available in bulk export cartons and private-label retail packs.',
+            },
+          },
+          {
+            '@type': 'Question',
             name: 'Which frozen vegetables do you export from India?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'We are a frozen vegetables exporter from India supplying IQF sweet corn kernels, frozen corn cobs, organic baby corn, frozen green peas, mixed vegetables, fresh onions, dry maize and onion powder from our certified facility in Ahilyanagar, Maharashtra.',
+              text: 'We are a frozen vegetables exporter from India supplying a full IQF range: sweet corn kernels, frozen corn cobs, baby corn, frozen okra (cut and whole), frozen bitter gourd, frozen French fries, frozen broccoli, green peas and mixed vegetables. We also supply fresh onions, dry maize and onion powder from our certified facility in Ahilyanagar, Maharashtra, India.',
             },
           },
           {

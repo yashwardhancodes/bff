@@ -16,6 +16,11 @@ import peas from '@/public/peas.png'
 import onion from '@/public/onion.png'
 import maize from '@/public/maize.png'
 import onionPowder from '@/public/onionPowder.jpg'
+import okraCut from '@/public/okra-cut.jpg'
+import okraWhole from '@/public/okra-whole.jpg'
+import bitterGourd from '@/public/bitter-gourd.jpg'
+import frenchFries from '@/public/french-fries.jpg'
+import broccoli from '@/public/broccoli.jpg'
 
 interface Product {
   id: number
@@ -190,6 +195,101 @@ const products: Product[] = [
       instructions: 'Store in a cool, dry airtight container away from moisture, heat and sunlight.',
       shelfLife: '18 months from production date',
       usageTips: ['Use in soups, gravies and marinades', 'Ideal for spice blends and snack coatings', 'Perfect for food processing'],
+    },
+  },
+  {
+    id: 9,
+    name: 'Frozen Okra Cut',
+    description: 'Tender okra (bhindi) cut into uniform pieces and IQF-frozen — free-flowing and ready to cook.',
+    image: okraCut,
+    details: 'Tender okra sourced from farms across Maharashtra, washed, trimmed, cut into uniform pieces and IQF-frozen within hours of harvest. Each piece stays separate and free-flowing — cook straight from frozen for curries, stews and ready meals.',
+    highlights: [
+      'Tender, young okra — uniform cut pieces',
+      'IQF-frozen, free-flowing, no clumping',
+      'Bright green colour, no added preservatives',
+      'Available in retail packs and bulk export cartons',
+    ],
+    nutrition: { servingSize: '100g', calories: 33, totalFat: '0.2g', sodium: '7mg', totalCarbs: '7g', protein: '1.9g' },
+    storage: {
+      instructions: 'Store in freezer at -18°C or below. Do not refreeze once thawed.',
+      shelfLife: '18 months from production date',
+      usageTips: ['Cook straight from frozen — no thawing needed', 'Perfect for bhindi masala and okra curry', 'Add to stews, gumbo and ready meals'],
+    },
+  },
+  {
+    id: 10,
+    name: 'Frozen Okra Whole',
+    description: 'Young, tender whole okra pods, stem-trimmed and IQF-frozen to keep their shape and texture.',
+    image: okraWhole,
+    details: 'Young, tender okra pods selected for size and colour, stem-trimmed and IQF-frozen whole to keep their shape and texture. Ideal for bhindi masala, stuffed okra, bamia and Middle Eastern and South Asian dishes.',
+    highlights: [
+      'Hand-selected tender pods, stem trimmed',
+      'IQF-frozen whole — shape and texture retained',
+      'Popular with Middle East and South Asian buyers',
+      'Available in retail packs and bulk export cartons',
+    ],
+    nutrition: { servingSize: '100g', calories: 33, totalFat: '0.2g', sodium: '7mg', totalCarbs: '7g', protein: '1.9g' },
+    storage: {
+      instructions: 'Store in freezer at -18°C or below. Do not refreeze once thawed.',
+      shelfLife: '18 months from production date',
+      usageTips: ['Ideal for stuffed bhindi and bamia', 'Shallow-fry or roast straight from frozen', 'Great for tempura and grilled sides'],
+    },
+  },
+  {
+    id: 11,
+    name: 'Frozen Bitter Gourd Slices',
+    description: 'Fresh green bitter gourd (karela) sliced to a uniform thickness and IQF-frozen.',
+    image: bitterGourd,
+    details: 'Fresh green bitter gourd (karela) from Maharashtra farms, washed, sliced to a uniform thickness and IQF-frozen within hours. Slice thickness is checked with digital calipers on every batch, so the slices cook evenly in curries, stir-fries and fried dishes.',
+    highlights: [
+      'Uniform slices, approx. 4–5 mm, caliper-checked',
+      'IQF-frozen, deep green colour retained',
+      'High demand with South Asian diaspora markets',
+      'Available in retail packs and bulk export cartons',
+    ],
+    nutrition: { servingSize: '100g', calories: 17, totalFat: '0.2g', sodium: '5mg', totalCarbs: '3.7g', protein: '1g' },
+    storage: {
+      instructions: 'Store in freezer at -18°C or below. Do not refreeze once thawed.',
+      shelfLife: '18 months from production date',
+      usageTips: ['Fry straight from frozen for crispy karela', 'Perfect for karela sabzi and stir-fries', 'Use in curries, stuffed dishes and juices'],
+    },
+  },
+  {
+    id: 12,
+    name: 'Frozen French Fries (Finger Chips)',
+    description: 'Straight-cut potato finger chips, IQF-frozen — fry straight from frozen for golden, crisp fries.',
+    image: frenchFries,
+    details: 'Straight-cut potato fries (finger chips) made from selected potatoes, IQF-frozen to keep each strip separate. Fry straight from frozen for a golden, crisp outside and soft inside — built for quick-service restaurants, hotels, caterers and retail.',
+    highlights: [
+      'Straight-cut, consistent length and thickness',
+      'IQF-frozen — fry straight from the freezer',
+      'Ideal for QSR, HoReCa and retail',
+      'Available in retail packs and bulk export cartons',
+    ],
+    nutrition: { servingSize: '100g (frozen)', calories: 150, totalFat: '5g', sodium: '30mg', totalCarbs: '24g', protein: '2.3g' },
+    storage: {
+      instructions: 'Store in freezer at -18°C or below. Do not thaw before frying.',
+      shelfLife: '18 months from production date',
+      usageTips: ['Deep-fry at 175°C for 3–4 minutes', 'Air-fry or oven-bake for a lighter option', 'Season with salt, peri-peri or masala'],
+    },
+  },
+  {
+    id: 13,
+    name: 'Frozen Broccoli Florets',
+    description: 'Bright green broccoli florets, uniformly cut and IQF-frozen to lock in colour and nutrients.',
+    image: broccoli,
+    details: 'Fresh broccoli heads cut into florets, blanched and IQF-frozen to keep their bright green colour, firm bite and nutrients. Ready for stir-fries, pasta, soups, salads and ready-meal production.',
+    highlights: [
+      'Uniformly cut florets, bright green colour',
+      'IQF-frozen — free-flowing, no clumping',
+      'Rich in vitamin C and dietary fibre',
+      'Available in retail packs and bulk export cartons',
+    ],
+    nutrition: { servingSize: '100g', calories: 28, totalFat: '0.3g', sodium: '24mg', totalCarbs: '5.4g', protein: '3g' },
+    storage: {
+      instructions: 'Store in freezer at -18°C or below. Do not refreeze once thawed.',
+      shelfLife: '18 months from production date',
+      usageTips: ['Steam for 3–4 minutes straight from frozen', 'Add to stir-fries, pasta and soups', 'Roast with olive oil and garlic'],
     },
   },
 ]
