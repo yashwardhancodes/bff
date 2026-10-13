@@ -24,7 +24,6 @@ import okraWhole from '@/public/okra-whole.jpg'
 import bitterGourd from '@/public/bitter-gourd.jpg'
 import frenchFries from '@/public/french-fries.jpg'
 import broccoli from '@/public/broccoli.jpg'
-import heroBanner from '@/public/hero-banner.png'
 
 // Define TypeScript interface for product data
 interface Product {
@@ -565,17 +564,30 @@ export default function Home() {
 
       {/* Hero Section */}
       <section id="home" className="relative min-h-screen flex items-center">
-        {/* Background — frozen vegetables banner, gradient darker on left for readability */}
-        <div className="absolute inset-0 z-0">
-          <Image
-            src={heroBanner}
-            alt="Frozen sweet corn, okra, bitter gourd, broccoli, green peas and mixed vegetables"
-            fill
-            priority
-            sizes="100vw"
-            className="object-cover object-center"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/55 to-black/25" />
+        {/* Background — mosaic of the frozen vegetable range, gradient darker on left for readability */}
+        <div className="absolute inset-0 z-0 grid grid-cols-2 grid-rows-4 md:grid-cols-4 md:grid-rows-2">
+          {[
+            { src: mixed, alt: 'Frozen mixed vegetables' },
+            { src: okraWhole, alt: 'Frozen whole okra' },
+            { src: frozen, alt: 'IQF frozen sweet corn kernels' },
+            { src: bitterGourd, alt: 'Frozen bitter gourd slices' },
+            { src: peas, alt: 'Frozen green peas' },
+            { src: okraCut, alt: 'Frozen cut okra' },
+            { src: broccoli, alt: 'Frozen broccoli florets' },
+            { src: frenchFries, alt: 'Frozen French fries' },
+          ].map(({ src, alt }, i) => (
+            <div key={alt} className="relative overflow-hidden">
+              <Image
+                src={src}
+                alt={alt}
+                fill
+                priority={i < 4}
+                sizes="(min-width: 768px) 25vw, 50vw"
+                className="object-cover"
+              />
+            </div>
+          ))}
+          <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/65 to-black/40" />
         </div>
 
         <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-28">
