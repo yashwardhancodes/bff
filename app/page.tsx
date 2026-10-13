@@ -10,7 +10,7 @@ import { FaInstagram, FaFacebook, FaWhatsapp, FaLinkedin } from 'react-icons/fa'
 
  
 // Import image files with proper TypeScript typing
-import corn from '@/public/logo.png'
+import brandIcon from '@/app/icon.png'
 import frozen from '@/public/frozen.jpg'
 import cob from '@/public/cob.png'
 import mixed from '@/public/mixed.png'
@@ -24,6 +24,7 @@ import okraWhole from '@/public/okra-whole.jpg'
 import bitterGourd from '@/public/bitter-gourd.jpg'
 import frenchFries from '@/public/french-fries.jpg'
 import broccoli from '@/public/broccoli.jpg'
+import heroBanner from '@/public/hero-banner.png'
 
 // Define TypeScript interface for product data
 interface Product {
@@ -460,13 +461,17 @@ export default function Home() {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex justify-between items-center h-16">
                         <div className="flex items-center space-x-2">
-                          <Link href="/">
+                          <Link href="/" className="flex items-center gap-3">
                             <Image
-                                src={corn}
-                                alt="BFF Frozen Corns Logo"
-                                height={50}
-                                className="rounded-md transform"
+                                src={brandIcon}
+                                alt="Baliraja Farm Fresh Logo"
+                                width={48}
+                                height={48}
+                                className="rounded-full"
                             />
+                            <span className="text-lg sm:text-xl font-bold text-gray-900 tracking-tight">
+                                Baliraja Farm Fresh
+                            </span>
                             </Link>
                         </div>
 
@@ -560,30 +565,17 @@ export default function Home() {
 
       {/* Hero Section */}
       <section id="home" className="relative min-h-screen flex items-center">
-        {/* Background — mosaic of the frozen vegetable range, gradient darker on left for readability */}
-        <div className="absolute inset-0 z-0 grid grid-cols-2 grid-rows-4 md:grid-cols-4 md:grid-rows-2">
-          {[
-            { src: mixed, alt: 'Frozen mixed vegetables' },
-            { src: okraWhole, alt: 'Frozen whole okra' },
-            { src: frozen, alt: 'IQF frozen sweet corn kernels' },
-            { src: bitterGourd, alt: 'Frozen bitter gourd slices' },
-            { src: peas, alt: 'Frozen green peas' },
-            { src: okraCut, alt: 'Frozen cut okra' },
-            { src: broccoli, alt: 'Frozen broccoli florets' },
-            { src: frenchFries, alt: 'Frozen French fries' },
-          ].map(({ src, alt }, i) => (
-            <div key={alt} className="relative overflow-hidden">
-              <Image
-                src={src}
-                alt={alt}
-                fill
-                priority={i < 4}
-                sizes="(min-width: 768px) 25vw, 50vw"
-                className="object-cover"
-              />
-            </div>
-          ))}
-          <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/65 to-black/40" />
+        {/* Background — frozen vegetables banner, gradient darker on left for readability */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src={heroBanner}
+            alt="Frozen sweet corn, okra, bitter gourd, broccoli, green peas and mixed vegetables"
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-center"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/55 to-black/25" />
         </div>
 
         <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-28">
@@ -1448,11 +1440,13 @@ export default function Home() {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="flex items-center space-x-2 mb-4 md:mb-0">
             <Image
-              src={corn}
-              alt="BFF Frozen Corns Logo"
+              src={brandIcon}
+              alt="Baliraja Farm Fresh Logo"
+              width={40}
               height={40}
-              className="rounded-md transform"
+              className="rounded-full"
             />
+            <span className="text-lg font-bold text-white">Baliraja Farm Fresh</span>
           </div>
           <div className="flex space-x-4 mb-4 md:mb-0">
             <a

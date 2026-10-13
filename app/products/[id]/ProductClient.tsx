@@ -7,7 +7,7 @@ import Link from 'next/link'
 import { useParams } from 'next/navigation'
 import { FaInstagram, FaFacebook, FaWhatsapp, FaLinkedin } from 'react-icons/fa'
 
-import corn from '@/public/logo.png'
+import brandIcon from '@/app/icon.png'
 import frozen from '@/public/frozen.jpg'
 import cob from '@/public/cob.png'
 import mixed from '@/public/mixed.png'
@@ -309,8 +309,9 @@ export default function ProductPage() {
     <nav className="fixed w-full z-50 bg-white/95 backdrop-blur-sm border-b border-amber-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <Link href="/">
-            <Image src={corn} alt="BFF Frozen Corns Logo" height={50} className="rounded-md" />
+          <Link href="/" className="flex items-center gap-3">
+            <Image src={brandIcon} alt="Baliraja Farm Fresh Logo" width={48} height={48} className="rounded-full" />
+            <span className="text-lg sm:text-xl font-bold text-gray-900 tracking-tight">Baliraja Farm Fresh</span>
           </Link>
 
           <div className="hidden md:flex items-center space-x-7">
@@ -564,8 +565,9 @@ export default function ProductPage() {
       <footer className="bg-black text-white py-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <Link href="/">
-              <Image src={corn} alt="BFF Frozen Corns Logo" height={40} className="rounded-md" />
+            <Link href="/" className="flex items-center gap-3">
+              <Image src={brandIcon} alt="Baliraja Farm Fresh Logo" width={40} height={40} className="rounded-full" />
+              <span className="text-lg font-bold text-white">Baliraja Farm Fresh</span>
             </Link>
             <div className="flex space-x-4">
               <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors" aria-label="Instagram">
